@@ -2,7 +2,7 @@
 
 A simple example of QSFP communication on an Agilex7 dev board
 
-Build with Quartus Pro, last tested with 24.2.0
+Build with Quartus Pro, last tested with 24.2.0. Takes 26 minutes on Windows i9-10900K CPU @ 3.70GHz.
 
 As is, the IP is set for 25.6506 Gbps on QSFP 0, 1, and 2. This requires changing the clocks to 160.31625 MHz for:
  - Si5395_2 OUT5 : QSFP 0
