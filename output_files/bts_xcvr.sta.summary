@@ -1,0 +1,1742 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_10|directphy_f_0|directphy_f_0|rx_clkout|ch13'
+Slack : 0.166
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_8|directphy_f_0|directphy_f_0|rx_clkout|ch15'
+Slack : 0.196
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_1|directphy_f_0|directphy_f_0|rx_clkout|ch14'
+Slack : 0.306
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_2|directphy_f_0|directphy_f_0|rx_clkout|ch13'
+Slack : 0.312
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_0|directphy_f_0|directphy_f_0|rx_clkout|ch15'
+Slack : 0.340
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_4|directphy_f_0|directphy_f_0|rx_clkout|ch11'
+Slack : 0.342
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_7|directphy_f_0|directphy_f_0|rx_clkout|ch8'
+Slack : 0.354
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_6|directphy_f_0|directphy_f_0|rx_clkout|ch9'
+Slack : 0.357
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_3|directphy_f_0|directphy_f_0|rx_clkout|ch12'
+Slack : 0.366
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_9|directphy_f_0|directphy_f_0|rx_clkout|ch14'
+Slack : 0.426
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_5|directphy_f_0|directphy_f_0|rx_clkout|ch10'
+Slack : 0.433
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_11|directphy_f_0|directphy_f_0|rx_clkout|ch12'
+Slack : 0.442
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_11|directphy_f_0|directphy_f_0|tx_clkout|ch12'
+Slack : 0.551
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_8|directphy_f_0|directphy_f_0|tx_clkout|ch15'
+Slack : 0.625
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_4|directphy_f_0|directphy_f_0|tx_clkout|ch11'
+Slack : 0.683
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_3|directphy_f_0|directphy_f_0|tx_clkout|ch12'
+Slack : 0.704
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_5|directphy_f_0|directphy_f_0|tx_clkout|ch10'
+Slack : 0.780
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_6|directphy_f_0|directphy_f_0|tx_clkout|ch9'
+Slack : 0.841
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_10|directphy_f_0|directphy_f_0|tx_clkout|ch13'
+Slack : 0.848
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_0|directphy_f_0|directphy_f_0|tx_clkout|ch15'
+Slack : 0.931
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_7|directphy_f_0|directphy_f_0|tx_clkout|ch8'
+Slack : 0.951
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_9|directphy_f_0|directphy_f_0|tx_clkout|ch14'
+Slack : 0.987
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_2|directphy_f_0|directphy_f_0|tx_clkout|ch13'
+Slack : 1.074
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'q_sys_u0|ftile_xcvr_test_1|directphy_f_0|directphy_f_0|tx_clkout|ch14'
+Slack : 1.114
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'bts_xcvr_auto_tiles|z1577b_x390_y2_n0|hdpldadapt_tx_chnl_4|pld_fpll_shared_direct_async_out_hioint[2]'
+Slack : 2.180
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'bts_xcvr_auto_tiles|z1577b_x1_y330_n0|hdpldadapt_tx_chnl_4|pld_fpll_shared_direct_async_out_hioint[2]'
+Slack : 2.255
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'bts_xcvr_auto_tiles|z1577b_x1_y166_n0|hdpldadapt_tx_chnl_4|pld_fpll_shared_direct_async_out_hioint[2]'
+Slack : 2.256
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'altera_int_osc_clk'
+Slack : 2.599
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'iopll_u0|iopll_0_outclk0'
+Slack : 3.574
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Setup 'bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller_src_divided_osc_clk'
+Slack : 4.611
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller_src_divided_osc_clk'
+Slack : 4.708
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller_src_divided_osc_clk'
+Slack : 4.894
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'iopll_u0|iopll_0_outclk1'
+Slack : 9.920
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Setup 'altera_reserved_tck'
+Slack : 13.234
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Hold 'iopll_u0|iopll_0_outclk0'
+Slack : 0.003
+TNS   : 0.000
+Corner: Fast vid2 100C Model
+
+Type  : Hold 'iopll_u0|iopll_0_outclk1'
+Slack : 0.006
+TNS   : 0.000
+Corner: Fast vid2 100C Model
+
+Type  : Hold 'bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller_src_divided_osc_clk'
+Slack : 0.017
+TNS   : 0.000
+Corner: Fast vid2 100C Model
+
+Type  : Hold 'bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller_src_divided_osc_clk'
+Slack : 0.033
+TNS   : 0.000
+Corner: Fast vid2 100C Model
+
+Type  : Hold 'bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller_src_divided_osc_clk'
+Slack : 0.035
+TNS   : 0.000
+Corner: Fast vid2 100C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_10|directphy_f_0|directphy_f_0|tx_clkout|ch13'
+Slack : 0.079
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_4|directphy_f_0|directphy_f_0|rx_clkout|ch11'
+Slack : 0.082
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_8|directphy_f_0|directphy_f_0|rx_clkout|ch15'
+Slack : 0.085
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'altera_reserved_tck'
+Slack : 0.086
+TNS   : 0.000
+Corner: Fast vid2 100C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_7|directphy_f_0|directphy_f_0|rx_clkout|ch8'
+Slack : 0.086
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_0|directphy_f_0|directphy_f_0|rx_clkout|ch15'
+Slack : 0.087
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_10|directphy_f_0|directphy_f_0|rx_clkout|ch13'
+Slack : 0.088
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_1|directphy_f_0|directphy_f_0|rx_clkout|ch14'
+Slack : 0.088
+TNS   : 0.000
+Corner: Fast vid2 100C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_0|directphy_f_0|directphy_f_0|tx_clkout|ch15'
+Slack : 0.090
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_2|directphy_f_0|directphy_f_0|rx_clkout|ch13'
+Slack : 0.090
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_6|directphy_f_0|directphy_f_0|rx_clkout|ch9'
+Slack : 0.090
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_11|directphy_f_0|directphy_f_0|rx_clkout|ch12'
+Slack : 0.091
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_4|directphy_f_0|directphy_f_0|tx_clkout|ch11'
+Slack : 0.091
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_8|directphy_f_0|directphy_f_0|tx_clkout|ch15'
+Slack : 0.091
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_9|directphy_f_0|directphy_f_0|rx_clkout|ch14'
+Slack : 0.091
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_6|directphy_f_0|directphy_f_0|tx_clkout|ch9'
+Slack : 0.092
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_7|directphy_f_0|directphy_f_0|tx_clkout|ch8'
+Slack : 0.092
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_1|directphy_f_0|directphy_f_0|tx_clkout|ch14'
+Slack : 0.093
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_3|directphy_f_0|directphy_f_0|rx_clkout|ch12'
+Slack : 0.093
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_5|directphy_f_0|directphy_f_0|rx_clkout|ch10'
+Slack : 0.093
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_2|directphy_f_0|directphy_f_0|tx_clkout|ch13'
+Slack : 0.094
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'bts_xcvr_auto_tiles|z1577b_x1_y166_n0|hdpldadapt_tx_chnl_4|pld_fpll_shared_direct_async_out_hioint[2]'
+Slack : 0.095
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'bts_xcvr_auto_tiles|z1577b_x1_y330_n0|hdpldadapt_tx_chnl_4|pld_fpll_shared_direct_async_out_hioint[2]'
+Slack : 0.095
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_11|directphy_f_0|directphy_f_0|tx_clkout|ch12'
+Slack : 0.095
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_5|directphy_f_0|directphy_f_0|tx_clkout|ch10'
+Slack : 0.095
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_9|directphy_f_0|directphy_f_0|tx_clkout|ch14'
+Slack : 0.098
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'q_sys_u0|ftile_xcvr_test_3|directphy_f_0|directphy_f_0|tx_clkout|ch12'
+Slack : 0.100
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'altera_int_osc_clk'
+Slack : 0.107
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Hold 'bts_xcvr_auto_tiles|z1577b_x390_y2_n0|hdpldadapt_tx_chnl_4|pld_fpll_shared_direct_async_out_hioint[2]'
+Slack : 0.137
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_8|directphy_f_0|directphy_f_0|rx_clkout|ch15'
+Slack : 0.538
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_10|directphy_f_0|directphy_f_0|rx_clkout|ch13'
+Slack : 0.862
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_11|directphy_f_0|directphy_f_0|rx_clkout|ch12'
+Slack : 0.863
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_2|directphy_f_0|directphy_f_0|rx_clkout|ch13'
+Slack : 1.090
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_5|directphy_f_0|directphy_f_0|rx_clkout|ch10'
+Slack : 1.104
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_4|directphy_f_0|directphy_f_0|rx_clkout|ch11'
+Slack : 1.105
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_0|directphy_f_0|directphy_f_0|rx_clkout|ch15'
+Slack : 1.135
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_6|directphy_f_0|directphy_f_0|rx_clkout|ch9'
+Slack : 1.272
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_11|directphy_f_0|directphy_f_0|tx_clkout|ch12'
+Slack : 1.284
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_9|directphy_f_0|directphy_f_0|rx_clkout|ch14'
+Slack : 1.325
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_3|directphy_f_0|directphy_f_0|rx_clkout|ch12'
+Slack : 1.349
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_7|directphy_f_0|directphy_f_0|rx_clkout|ch8'
+Slack : 1.352
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_4|directphy_f_0|directphy_f_0|tx_clkout|ch11'
+Slack : 1.353
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_7|directphy_f_0|directphy_f_0|tx_clkout|ch8'
+Slack : 1.362
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_1|directphy_f_0|directphy_f_0|tx_clkout|ch14'
+Slack : 1.390
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_1|directphy_f_0|directphy_f_0|rx_clkout|ch14'
+Slack : 1.401
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_2|directphy_f_0|directphy_f_0|tx_clkout|ch13'
+Slack : 1.438
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_5|directphy_f_0|directphy_f_0|tx_clkout|ch10'
+Slack : 1.444
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_6|directphy_f_0|directphy_f_0|tx_clkout|ch9'
+Slack : 1.446
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_3|directphy_f_0|directphy_f_0|tx_clkout|ch12'
+Slack : 1.456
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_8|directphy_f_0|directphy_f_0|tx_clkout|ch15'
+Slack : 1.509
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_0|directphy_f_0|directphy_f_0|tx_clkout|ch15'
+Slack : 1.540
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_10|directphy_f_0|directphy_f_0|tx_clkout|ch13'
+Slack : 1.552
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'q_sys_u0|ftile_xcvr_test_9|directphy_f_0|directphy_f_0|tx_clkout|ch14'
+Slack : 1.587
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'iopll_u0|iopll_0_outclk0'
+Slack : 4.292
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller_src_divided_osc_clk'
+Slack : 6.853
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller_src_divided_osc_clk'
+Slack : 6.905
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller_src_divided_osc_clk'
+Slack : 6.917
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Recovery 'iopll_u0|iopll_0_outclk1'
+Slack : 18.244
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Recovery 'altera_reserved_tck'
+Slack : 61.597
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Removal 'iopll_u0|iopll_0_outclk0'
+Slack : 0.026
+TNS   : 0.000
+Corner: Fast vid2 100C Model
+
+Type  : Removal 'bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller_src_divided_osc_clk'
+Slack : 0.133
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller_src_divided_osc_clk'
+Slack : 0.154
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'iopll_u0|iopll_0_outclk1'
+Slack : 0.156
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_10|directphy_f_0|directphy_f_0|rx_clkout|ch13'
+Slack : 0.156
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_5|directphy_f_0|directphy_f_0|rx_clkout|ch10'
+Slack : 0.156
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller_src_divided_osc_clk'
+Slack : 0.159
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_9|directphy_f_0|directphy_f_0|tx_clkout|ch14'
+Slack : 0.161
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'altera_reserved_tck'
+Slack : 0.162
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_6|directphy_f_0|directphy_f_0|rx_clkout|ch9'
+Slack : 0.162
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_9|directphy_f_0|directphy_f_0|rx_clkout|ch14'
+Slack : 0.162
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_3|directphy_f_0|directphy_f_0|tx_clkout|ch12'
+Slack : 0.163
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_2|directphy_f_0|directphy_f_0|rx_clkout|ch13'
+Slack : 0.166
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_3|directphy_f_0|directphy_f_0|rx_clkout|ch12'
+Slack : 0.166
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_4|directphy_f_0|directphy_f_0|rx_clkout|ch11'
+Slack : 0.166
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_1|directphy_f_0|directphy_f_0|rx_clkout|ch14'
+Slack : 0.167
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_11|directphy_f_0|directphy_f_0|tx_clkout|ch12'
+Slack : 0.168
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_0|directphy_f_0|directphy_f_0|rx_clkout|ch15'
+Slack : 0.169
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_11|directphy_f_0|directphy_f_0|rx_clkout|ch12'
+Slack : 0.169
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_5|directphy_f_0|directphy_f_0|tx_clkout|ch10'
+Slack : 0.169
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_7|directphy_f_0|directphy_f_0|rx_clkout|ch8'
+Slack : 0.169
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_10|directphy_f_0|directphy_f_0|tx_clkout|ch13'
+Slack : 0.171
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_8|directphy_f_0|directphy_f_0|rx_clkout|ch15'
+Slack : 0.175
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_8|directphy_f_0|directphy_f_0|tx_clkout|ch15'
+Slack : 0.182
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_1|directphy_f_0|directphy_f_0|tx_clkout|ch14'
+Slack : 0.191
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_2|directphy_f_0|directphy_f_0|tx_clkout|ch13'
+Slack : 0.202
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_0|directphy_f_0|directphy_f_0|tx_clkout|ch15'
+Slack : 0.204
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_4|directphy_f_0|directphy_f_0|tx_clkout|ch11'
+Slack : 0.205
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_6|directphy_f_0|directphy_f_0|tx_clkout|ch9'
+Slack : 0.210
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Removal 'q_sys_u0|ftile_xcvr_test_7|directphy_f_0|directphy_f_0|tx_clkout|ch8'
+Slack : 0.229
+TNS   : 0.000
+Corner: Fast vid2a 0C Model
+
+Type  : Setup Data Delay 'bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller_src_divided_osc_clk'
+Slack : 5.445
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Setup Data Delay 'bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller_src_divided_osc_clk'
+Slack : 5.765
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Setup Data Delay 'bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller_src_divided_osc_clk'
+Slack : 5.935
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_10|directphy_f_0|directphy_f_0|tx_clkout|ch13'
+Slack : 0.523
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_11|directphy_f_0|directphy_f_0|tx_clkout|ch12'
+Slack : 0.524
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_7|directphy_f_0|directphy_f_0|tx_clkout|ch8'
+Slack : 0.544
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_5|directphy_f_0|directphy_f_0|tx_clkout|ch10'
+Slack : 0.546
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_7|directphy_f_0|directphy_f_0|rx_clkout|ch8'
+Slack : 0.550
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_4|directphy_f_0|directphy_f_0|tx_clkout|ch11'
+Slack : 0.551
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_5|directphy_f_0|directphy_f_0|rx_clkout|ch10'
+Slack : 0.552
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_2|directphy_f_0|directphy_f_0|rx_clkout|ch13'
+Slack : 0.554
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_4|directphy_f_0|directphy_f_0|rx_clkout|ch11'
+Slack : 0.554
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_2|directphy_f_0|directphy_f_0|tx_clkout|ch13'
+Slack : 0.555
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_0|directphy_f_0|directphy_f_0|rx_clkout|ch15'
+Slack : 0.557
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_3|directphy_f_0|directphy_f_0|rx_clkout|ch12'
+Slack : 0.557
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_6|directphy_f_0|directphy_f_0|rx_clkout|ch9'
+Slack : 0.558
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_1|directphy_f_0|directphy_f_0|tx_clkout|ch14'
+Slack : 0.559
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_3|directphy_f_0|directphy_f_0|tx_clkout|ch12'
+Slack : 0.559
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_6|directphy_f_0|directphy_f_0|tx_clkout|ch9'
+Slack : 0.561
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_9|directphy_f_0|directphy_f_0|rx_clkout|ch14'
+Slack : 0.561
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_8|directphy_f_0|directphy_f_0|tx_clkout|ch15'
+Slack : 0.562
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_11|directphy_f_0|directphy_f_0|rx_clkout|ch12'
+Slack : 0.563
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_9|directphy_f_0|directphy_f_0|tx_clkout|ch14'
+Slack : 0.564
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_0|directphy_f_0|directphy_f_0|tx_clkout|ch15'
+Slack : 0.565
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_1|directphy_f_0|directphy_f_0|rx_clkout|ch14'
+Slack : 0.565
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_8|directphy_f_0|directphy_f_0|rx_clkout|ch15'
+Slack : 0.565
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_10|directphy_f_0|directphy_f_0|rx_clkout|ch13'
+Slack : 0.569
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_6|directphy_f_0|directphy_f_0|rx_transfer_clk_reg|ch9'
+Slack : 0.726
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_5|directphy_f_0|directphy_f_0|rx_transfer_clk_reg|ch10'
+Slack : 0.727
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_7|directphy_f_0|directphy_f_0|rx_transfer_clk_reg|ch8'
+Slack : 0.727
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_4|directphy_f_0|directphy_f_0|rx_transfer_clk_reg|ch11'
+Slack : 0.730
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_11|directphy_f_0|directphy_f_0|rx_transfer_clk_reg|ch12'
+Slack : 0.734
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_3|directphy_f_0|directphy_f_0|rx_transfer_clk_reg|ch12'
+Slack : 0.734
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_10|directphy_f_0|directphy_f_0|rx_transfer_clk_reg|ch13'
+Slack : 0.737
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_2|directphy_f_0|directphy_f_0|rx_transfer_clk_reg|ch13'
+Slack : 0.737
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_1|directphy_f_0|directphy_f_0|rx_transfer_clk_reg|ch14'
+Slack : 0.738
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_9|directphy_f_0|directphy_f_0|rx_transfer_clk_reg|ch14'
+Slack : 0.738
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_0|directphy_f_0|directphy_f_0|rx_transfer_clk_reg|ch15'
+Slack : 0.740
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_8|directphy_f_0|directphy_f_0|rx_transfer_clk_reg|ch15'
+Slack : 0.740
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_7|directphy_f_0|directphy_f_0|tx_pma_aib_clk_reg|ch8'
+Slack : 0.797
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_6|directphy_f_0|directphy_f_0|rx_pld_pcs_clk_reg|ch9'
+Slack : 0.799
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_5|directphy_f_0|directphy_f_0|rx_pld_pcs_clk_reg|ch10'
+Slack : 0.800
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_6|directphy_f_0|directphy_f_0|tx_pma_aib_clk_reg|ch9'
+Slack : 0.800
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_7|directphy_f_0|directphy_f_0|rx_pld_pcs_clk_reg|ch8'
+Slack : 0.800
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_7|directphy_f_0|directphy_f_0|tx_pld_pcs_clk_reg|ch8'
+Slack : 0.800
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_4|directphy_f_0|directphy_f_0|rx_pld_pcs_clk_reg|ch11'
+Slack : 0.803
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_5|directphy_f_0|directphy_f_0|tx_pma_aib_clk_reg|ch10'
+Slack : 0.803
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_11|directphy_f_0|directphy_f_0|rx_pld_pcs_clk_reg|ch12'
+Slack : 0.804
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_3|directphy_f_0|directphy_f_0|rx_pld_pcs_clk_reg|ch12'
+Slack : 0.804
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_4|directphy_f_0|directphy_f_0|tx_pld_pcs_clk_reg|ch11'
+Slack : 0.804
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_4|directphy_f_0|directphy_f_0|tx_pma_aib_clk_reg|ch11'
+Slack : 0.805
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_6|directphy_f_0|directphy_f_0|tx_pld_pcs_clk_reg|ch9'
+Slack : 0.805
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_11|directphy_f_0|directphy_f_0|tx_pld_pcs_clk_reg|ch12'
+Slack : 0.806
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_11|directphy_f_0|directphy_f_0|tx_pma_aib_clk_reg|ch12'
+Slack : 0.806
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_3|directphy_f_0|directphy_f_0|tx_pld_pcs_clk_reg|ch12'
+Slack : 0.806
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_3|directphy_f_0|directphy_f_0|tx_pma_aib_clk_reg|ch12'
+Slack : 0.806
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_5|directphy_f_0|directphy_f_0|tx_pld_pcs_clk_reg|ch10'
+Slack : 0.806
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_0|directphy_f_0|directphy_f_0|rx_pld_pcs_clk_reg|ch15'
+Slack : 0.807
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_10|directphy_f_0|directphy_f_0|rx_pld_pcs_clk_reg|ch13'
+Slack : 0.807
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_2|directphy_f_0|directphy_f_0|rx_pld_pcs_clk_reg|ch13'
+Slack : 0.807
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_8|directphy_f_0|directphy_f_0|rx_pld_pcs_clk_reg|ch15'
+Slack : 0.807
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_0|directphy_f_0|directphy_f_0|tx_pma_aib_clk_reg|ch15'
+Slack : 0.808
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_10|directphy_f_0|directphy_f_0|tx_pma_aib_clk_reg|ch13'
+Slack : 0.808
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_1|directphy_f_0|directphy_f_0|rx_pld_pcs_clk_reg|ch14'
+Slack : 0.808
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_2|directphy_f_0|directphy_f_0|tx_pma_aib_clk_reg|ch13'
+Slack : 0.808
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_8|directphy_f_0|directphy_f_0|tx_pma_aib_clk_reg|ch15'
+Slack : 0.808
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_9|directphy_f_0|directphy_f_0|rx_pld_pcs_clk_reg|ch14'
+Slack : 0.808
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_0|directphy_f_0|directphy_f_0|tx_pld_pcs_clk_reg|ch15'
+Slack : 0.809
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_10|directphy_f_0|directphy_f_0|tx_pld_pcs_clk_reg|ch13'
+Slack : 0.809
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_1|directphy_f_0|directphy_f_0|tx_pma_aib_clk_reg|ch14'
+Slack : 0.809
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_2|directphy_f_0|directphy_f_0|tx_pld_pcs_clk_reg|ch13'
+Slack : 0.809
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_8|directphy_f_0|directphy_f_0|tx_pld_pcs_clk_reg|ch15'
+Slack : 0.809
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_9|directphy_f_0|directphy_f_0|tx_pma_aib_clk_reg|ch14'
+Slack : 0.809
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_1|directphy_f_0|directphy_f_0|tx_pld_pcs_clk_reg|ch14'
+Slack : 0.811
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'q_sys_u0|ftile_xcvr_test_9|directphy_f_0|directphy_f_0|tx_pld_pcs_clk_reg|ch14'
+Slack : 0.811
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'bts_xcvr_auto_tiles|z1577b_x390_y2_n0|hdpldadapt_tx_chnl_4|pld_fpll_shared_direct_async_out_hioint[2]'
+Slack : 1.085
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'bts_xcvr_auto_tiles|z1577b_x1_y166_n0|hdpldadapt_tx_chnl_4|pld_fpll_shared_direct_async_out_hioint[2]'
+Slack : 1.123
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'bts_xcvr_auto_tiles|z1577b_x1_y330_n0|hdpldadapt_tx_chnl_4|pld_fpll_shared_direct_async_out_hioint[2]'
+Slack : 1.123
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'altera_int_osc_clk'
+Slack : 1.248
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'internal_clk'
+Slack : 2.329
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'refclk_fgt13Ach4_p'
+Slack : 3.200
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'refclk_fgt13Cch4_p'
+Slack : 3.200
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller_src_divided_osc_clk'
+Slack : 3.461
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller_src_divided_osc_clk'
+Slack : 3.479
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller_src_divided_osc_clk'
+Slack : 3.493
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'iopll_u0|iopll_0_outclk0'
+Slack : 4.434
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'iopll_u0|iopll_0_refclk'
+Slack : 4.537
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'iopll_u0|iopll_0_n_cnt_clk'
+Slack : 4.934
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'iopll_u0|iopll_0_outclk1'
+Slack : 9.477
+TNS   : 0.000
+Corner: Slow vid2b 100C Model
+
+Type  : Minimum Pulse Width 'altera_reserved_tck'
+Slack : 28.445
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Minimum Pulse Width 'iopll_u0|iopll_0_m_cnt_clk'
+Slack : 69.921
+TNS   : 0.000
+Corner: Slow vid2 100C Model
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.488
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.510
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.511
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.521
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.529
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.533
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.533
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.535
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.541
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.543
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.545
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.564
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.580
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.613
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.677
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.687
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.365
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.387
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.465
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.465
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.466
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.470
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.498
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.502
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.503
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.506
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.516
+
+Type  : Slow vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.521
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 7.494
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 7.513
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 7.521
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 7.528
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 7.536
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 7.538
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 7.539
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 7.541
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 7.548
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 7.550
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 7.551
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 7.570
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 7.585
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 7.618
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 7.679
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 7.691
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 15.375
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 15.398
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 15.471
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 15.472
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 15.475
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 15.477
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 15.506
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 15.507
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 15.508
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 15.509
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 15.523
+
+Type  : Slow vid2b 100C Model Max Skew 'set_max_skew'
+Slack : 15.530
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 7.616
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 7.637
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 7.643
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 7.650
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 7.654
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 7.654
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 7.656
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 7.659
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 7.663
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 7.663
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 7.666
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 7.679
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 7.691
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 7.711
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 7.762
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 7.769
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 15.550
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 15.560
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 15.610
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 15.615
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 15.627
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 15.628
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 15.628
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 15.632
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 15.640
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 15.641
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 15.649
+
+Type  : Fast vid2a 0C Model Max Skew 'set_max_skew'
+Slack : 15.655
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 7.564
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 7.596
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 7.606
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 7.614
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 7.615
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 7.618
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 7.621
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 7.623
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 7.625
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 7.626
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 7.629
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 7.644
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 7.666
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 7.687
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 7.739
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 7.748
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 15.481
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 15.524
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 15.562
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 15.570
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 15.588
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 15.588
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 15.593
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 15.595
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 15.598
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 15.600
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 15.608
+
+Type  : Fast vid2a 100C Model Max Skew 'set_max_skew'
+Slack : 15.621
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.559
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.589
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.601
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.606
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.608
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.613
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.616
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.618
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.620
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.621
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.621
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.638
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.660
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.682
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.735
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 7.744
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.469
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.513
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.553
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.562
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.580
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.580
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.585
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.590
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.593
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.594
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.602
+
+Type  : Fast vid2 100C Model Max Skew 'set_max_skew'
+Slack : 15.613
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.403
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.420
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.423
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.426
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.429
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.434
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.435
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.438
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.443
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.445
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.445
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.452
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.453
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.453
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.457
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.460
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.468
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.476
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.485
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.486
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.492
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.492
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.493
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.500
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.508
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.512
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.514
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.522
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.524
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.525
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.526
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.530
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.541
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.553
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.554
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.572
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.746
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.773
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.396
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.415
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.420
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.432
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.440
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.446
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.446
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.447
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.451
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.453
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.457
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.459
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.471
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.475
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.475
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.476
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.479
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.484
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.485
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.487
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.489
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.494
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.501
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.504
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.513
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.513
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.517
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.520
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.520
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.531
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.533
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.536
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.539
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.545
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.559
+
+Type  : Net Delay 'set_net_delay'
+Slack : 15.563
+
+------------------------------------------------------------

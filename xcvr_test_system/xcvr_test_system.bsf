@@ -1,0 +1,187 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 728 640)
+	(text "xcvr_test_system" (rect 304 0 379 12)(font "Arial" (font_size 11)))
+	(text "inst" (rect 8 624 20 636)(font "Arial" ))
+	(port
+		(pt 0 76)
+		(input)
+		(text "clk_50_clk" (rect 0 0 42 12)(font "Arial" (font_size 8)))
+		(text "clk_50_clk" (rect 4 65 64 76)(font "Arial" (font_size 8)))
+		(line (pt 0 76)(pt 323 76)(line_width 1))
+	)
+	(port
+		(pt 0 126)
+		(input)
+		(text "reset_50_reset_n" (rect 0 0 71 12)(font "Arial" (font_size 8)))
+		(text "reset_50_reset_n" (rect 4 115 100 126)(font "Arial" (font_size 8)))
+		(line (pt 0 126)(pt 323 126)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "data_pattern_checker_0_conduit_pattern_in_clk_export" (rect 0 0 223 12)(font "Arial" (font_size 8)))
+		(text "data_pattern_checker_0_conduit_pattern_in_clk_export" (rect 4 165 316 176)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 323 176)(line_width 1))
+	)
+	(port
+		(pt 0 226)
+		(input)
+		(text "data_pattern_checker_0_conduit_pattern_in_export[63..0]" (rect 0 0 231 12)(font "Arial" (font_size 8)))
+		(text "data_pattern_checker_0_conduit_pattern_in_export[63..0]" (rect 4 215 334 226)(font "Arial" (font_size 8)))
+		(line (pt 0 226)(pt 323 226)(line_width 3))
+	)
+	(port
+		(pt 0 276)
+		(input)
+		(text "data_pattern_generator_0_conduit_pattern_out_clk_export" (rect 0 0 234 12)(font "Arial" (font_size 8)))
+		(text "data_pattern_generator_0_conduit_pattern_out_clk_export" (rect 4 265 334 276)(font "Arial" (font_size 8)))
+		(line (pt 0 276)(pt 323 276)(line_width 1))
+	)
+	(port
+		(pt 0 451)
+		(input)
+		(text "mm_bridge_0_s0_burstcount" (rect 0 0 119 12)(font "Arial" (font_size 8)))
+		(text "mm_bridge_0_s0_burstcount" (rect 4 440 154 451)(font "Arial" (font_size 8)))
+		(line (pt 0 451)(pt 323 451)(line_width 1))
+	)
+	(port
+		(pt 0 476)
+		(input)
+		(text "mm_bridge_0_s0_writedata[31..0]" (rect 0 0 135 12)(font "Arial" (font_size 8)))
+		(text "mm_bridge_0_s0_writedata[31..0]" (rect 4 465 190 476)(font "Arial" (font_size 8)))
+		(line (pt 0 476)(pt 323 476)(line_width 3))
+	)
+	(port
+		(pt 0 501)
+		(input)
+		(text "mm_bridge_0_s0_address[12..0]" (rect 0 0 133 12)(font "Arial" (font_size 8)))
+		(text "mm_bridge_0_s0_address[12..0]" (rect 4 490 178 501)(font "Arial" (font_size 8)))
+		(line (pt 0 501)(pt 323 501)(line_width 3))
+	)
+	(port
+		(pt 0 526)
+		(input)
+		(text "mm_bridge_0_s0_write" (rect 0 0 95 12)(font "Arial" (font_size 8)))
+		(text "mm_bridge_0_s0_write" (rect 4 515 124 526)(font "Arial" (font_size 8)))
+		(line (pt 0 526)(pt 323 526)(line_width 1))
+	)
+	(port
+		(pt 0 551)
+		(input)
+		(text "mm_bridge_0_s0_read" (rect 0 0 95 12)(font "Arial" (font_size 8)))
+		(text "mm_bridge_0_s0_read" (rect 4 540 118 551)(font "Arial" (font_size 8)))
+		(line (pt 0 551)(pt 323 551)(line_width 1))
+	)
+	(port
+		(pt 0 576)
+		(input)
+		(text "mm_bridge_0_s0_byteenable[3..0]" (rect 0 0 140 12)(font "Arial" (font_size 8)))
+		(text "mm_bridge_0_s0_byteenable[3..0]" (rect 4 565 190 576)(font "Arial" (font_size 8)))
+		(line (pt 0 576)(pt 323 576)(line_width 3))
+	)
+	(port
+		(pt 0 601)
+		(input)
+		(text "mm_bridge_0_s0_debugaccess" (rect 0 0 129 12)(font "Arial" (font_size 8)))
+		(text "mm_bridge_0_s0_debugaccess" (rect 4 590 160 601)(font "Arial" (font_size 8)))
+		(line (pt 0 601)(pt 323 601)(line_width 1))
+	)
+	(port
+		(pt 0 326)
+		(output)
+		(text "data_pattern_generator_0_conduit_pattern_out_export[63..0]" (rect 0 0 243 12)(font "Arial" (font_size 8)))
+		(text "data_pattern_generator_0_conduit_pattern_out_export[63..0]" (rect 4 315 352 326)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 0 376)
+		(output)
+		(text "mm_bridge_0_s0_waitrequest" (rect 0 0 121 12)(font "Arial" (font_size 8)))
+		(text "mm_bridge_0_s0_waitrequest" (rect 4 365 160 376)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 0 401)
+		(output)
+		(text "mm_bridge_0_s0_readdata[31..0]" (rect 0 0 135 12)(font "Arial" (font_size 8)))
+		(text "mm_bridge_0_s0_readdata[31..0]" (rect 4 390 184 401)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 0 426)
+		(output)
+		(text "mm_bridge_0_s0_readdatavalid" (rect 0 0 129 12)(font "Arial" (font_size 8)))
+		(text "mm_bridge_0_s0_readdatavalid" (rect 4 415 172 426)(font "Arial" (font_size 8)))
+	)
+	(drawing
+		(text "clk_50" (rect 286 46 608 105)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 328 71 674 152)(font "Arial" (color 0 0 0)))
+		(text "reset_50" (rect 272 96 592 205)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 328 121 698 252)(font "Arial" (color 0 0 0)))
+		(text "data_pattern_checker_0_conduit_pattern_in_clk" (rect 42 146 354 305)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 328 171 692 352)(font "Arial" (color 0 0 0)))
+		(text "data_pattern_checker_0_conduit_pattern_in" (rect 66 196 378 405)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 328 221 692 452)(font "Arial" (color 0 0 0)))
+		(text "data_pattern_generator_0_conduit_pattern_out_clk" (rect 23 246 334 505)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 328 271 692 552)(font "Arial" (color 0 0 0)))
+		(text "data_pattern_generator_0_conduit_pattern_out" (rect 47 296 358 605)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 328 321 692 652)(font "Arial" (color 0 0 0)))
+		(text "mm_bridge_0_s0" (rect 221 346 526 705)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "waitrequest" (rect 328 371 722 752)(font "Arial" (color 0 0 0)))
+		(text "readdata" (rect 328 396 704 802)(font "Arial" (color 0 0 0)))
+		(text "readdatavalid" (rect 328 421 734 852)(font "Arial" (color 0 0 0)))
+		(text "burstcount" (rect 328 446 716 902)(font "Arial" (color 0 0 0)))
+		(text "writedata" (rect 328 471 710 952)(font "Arial" (color 0 0 0)))
+		(text "address" (rect 328 496 698 1002)(font "Arial" (color 0 0 0)))
+		(text "write" (rect 328 521 686 1052)(font "Arial" (color 0 0 0)))
+		(text "read" (rect 328 546 680 1102)(font "Arial" (color 0 0 0)))
+		(text "byteenable" (rect 328 571 716 1152)(font "Arial" (color 0 0 0)))
+		(text "debugaccess" (rect 328 596 722 1202)(font "Arial" (color 0 0 0)))
+		(text " xcvr_test_system " (rect 648 626 1404 1262)(font "Arial" ))
+		(line (pt 323 34)(pt 408 34)(line_width 1))
+		(line (pt 408 34)(pt 408 626)(line_width 1))
+		(line (pt 323 626)(pt 408 626)(line_width 1))
+		(line (pt 323 34)(pt 323 626)(line_width 1))
+		(line (pt 324 55)(pt 324 80)(line_width 1))
+		(line (pt 325 55)(pt 325 80)(line_width 1))
+		(line (pt 324 105)(pt 324 130)(line_width 1))
+		(line (pt 325 105)(pt 325 130)(line_width 1))
+		(line (pt 324 155)(pt 324 180)(line_width 1))
+		(line (pt 325 155)(pt 325 180)(line_width 1))
+		(line (pt 324 205)(pt 324 230)(line_width 1))
+		(line (pt 325 205)(pt 325 230)(line_width 1))
+		(line (pt 324 255)(pt 324 280)(line_width 1))
+		(line (pt 325 255)(pt 325 280)(line_width 1))
+		(line (pt 728 326)(pt 323 326)(line_width 3))
+		(line (pt 324 305)(pt 324 330)(line_width 1))
+		(line (pt 325 305)(pt 325 330)(line_width 1))
+		(line (pt 728 376)(pt 323 376)(line_width 1))
+		(line (pt 728 401)(pt 323 401)(line_width 3))
+		(line (pt 728 426)(pt 323 426)(line_width 1))
+		(line (pt 324 355)(pt 324 605)(line_width 1))
+		(line (pt 325 355)(pt 325 605)(line_width 1))
+		(line (pt 0 0)(pt 728 0)(line_width 1))
+		(line (pt 728 0)(pt 728 643)(line_width 1))
+		(line (pt 0 643)(pt 728 643)(line_width 1))
+		(line (pt 0 0)(pt 0 643)(line_width 1))
+	)
+)

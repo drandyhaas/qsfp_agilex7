@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.10.27.20:16:35"
+ outputDirectory="C:/Users/Haas1S/Downloads/agilex_xcvr/qsfp_xcvr_012/ip/ftile_xcvr_test/ftile_xcvr_test_xcvr_conduit_ctrl_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGIC040R39A2E2VR0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="Intel Agilex 7 FPGA I-Series Transceiver Development Kit 6xF-Tile DK-SI-AGI040FES"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="clock" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="clock" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="csr" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="64" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="clock" />
+   <property name="associatedReset" value="reset" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="0" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumReadLatency" value="1" />
+   <property name="minimumResponseLatency" value="1" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="0" />
+   <property name="readWaitStates" value="1" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="waitrequestAllowance" value="0" />
+   <property name="waitrequestTimeout" value="1024" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
+   <property name="dfhFeatureType" value="3" />
+   <port name="csr_address" direction="input" role="address" width="4" />
+   <port name="csr_read" direction="input" role="read" width="1" />
+   <port name="csr_write" direction="input" role="write" width="1" />
+   <port name="csr_readdata" direction="output" role="readdata" width="32" />
+   <port name="csr_writedata" direction="input" role="writedata" width="32" />
+  </interface>
+  <interface name="tx_pll_locked" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="tx_pll_locked" direction="input" role="tx_pll_locked" width="1" />
+  </interface>
+  <interface name="rx_is_lockedtoref" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="rx_is_lockedtoref"
+       direction="input"
+       role="rx_is_lockedtoref"
+       width="1" />
+  </interface>
+  <interface name="rx_is_lockedtodata" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="rx_is_lockedtodata"
+       direction="input"
+       role="rx_is_lockedtodata"
+       width="1" />
+  </interface>
+  <interface name="tx_reset" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="tx_reset" direction="output" role="tx_reset" width="1" />
+  </interface>
+  <interface name="tx_reset_ack" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="tx_reset_ack" direction="input" role="tx_reset_ack" width="1" />
+  </interface>
+  <interface name="tx_ready" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="tx_ready" direction="input" role="tx_ready" width="1" />
+  </interface>
+  <interface name="rx_reset" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rx_reset" direction="output" role="rx_reset" width="1" />
+  </interface>
+  <interface name="rx_reset_ack" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rx_reset_ack" direction="input" role="rx_reset_ack" width="1" />
+  </interface>
+  <interface name="rx_ready" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rx_ready" direction="input" role="rx_ready" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="ftile_xcvr_test_xcvr_conduit_ctrl_0"
+   version="1.0"
+   name="ftile_xcvr_test_xcvr_conduit_ctrl_0">
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGIC040R39A2E2VR0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter
+     name="AUTO_BOARD"
+     value="Intel Agilex 7 FPGA I-Series Transceiver Development Kit 6xF-Tile DK-SI-AGI040FES" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <generatedFiles>
+   <file
+       path="C:\Users\Haas1S\Downloads\agilex_xcvr\qsfp_xcvr_012\ip\ftile_xcvr_test\ftile_xcvr_test_xcvr_conduit_ctrl_0\synth\ftile_xcvr_test_xcvr_conduit_ctrl_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Users\Haas1S\Downloads\agilex_xcvr\qsfp_xcvr_012\ip\ftile_xcvr_test\ftile_xcvr_test_xcvr_conduit_ctrl_0\synth\ftile_xcvr_test_xcvr_conduit_ctrl_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Users/Haas1S/Downloads/agilex_xcvr/qsfp_xcvr_012/ip/ftile_xcvr_test/ftile_xcvr_test_xcvr_conduit_ctrl_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/Users/Haas1S/Downloads/agilex_xcvr/qsfp_xcvr_012/ip/xcvr_conduit_ctrl/xcvr_conduit_ctrl_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="ftile_xcvr_test_xcvr_conduit_ctrl_0">"Generating: ftile_xcvr_test_xcvr_conduit_ctrl_0"</message>
+   <message level="Info" culprit="ftile_xcvr_test_xcvr_conduit_ctrl_0">"Generating: xcvr_conduit_ctrl"</message>
+  </messages>
+ </entity>
+ <entity kind="xcvr_conduit_ctrl" version="1.0" name="xcvr_conduit_ctrl">
+  <generatedFiles>
+   <file
+       path="C:\Users\Haas1S\Downloads\agilex_xcvr\qsfp_xcvr_012\ip\ftile_xcvr_test\ftile_xcvr_test_xcvr_conduit_ctrl_0\xcvr_conduit_ctrl_10\synth\xcvr_conduit_ctrl.v"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Users\Haas1S\Downloads\agilex_xcvr\qsfp_xcvr_012\ip\ftile_xcvr_test\ftile_xcvr_test_xcvr_conduit_ctrl_0\xcvr_conduit_ctrl_10\synth\xcvr_conduit_ctrl.v"
+       attributes="TOP_LEVEL_FILE" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Users/Haas1S/Downloads/agilex_xcvr/qsfp_xcvr_012/ip/xcvr_conduit_ctrl/xcvr_conduit_ctrl_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="ftile_xcvr_test_xcvr_conduit_ctrl_0"
+     as="xcvr_conduit_ctrl_0" />
+  <messages>
+   <message level="Info" culprit="ftile_xcvr_test_xcvr_conduit_ctrl_0">"Generating: xcvr_conduit_ctrl"</message>
+  </messages>
+ </entity>
+</deploy>

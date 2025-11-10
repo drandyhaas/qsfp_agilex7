@@ -1,0 +1,36 @@
+	component ftile_xcvr_test_directphy_f_0 is
+		port (
+			rx_cdr_refclk_link        : in  std_logic                     := 'X';             -- clk
+			tx_pll_refclk_link        : in  std_logic                     := 'X';             -- clk
+			system_pll_clk_link       : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- clk
+			tx_reset                  : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- tx_reset
+			rx_reset                  : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- rx_reset
+			tx_reset_ack              : out std_logic_vector(0 downto 0);                     -- tx_reset_ack
+			rx_reset_ack              : out std_logic_vector(0 downto 0);                     -- rx_reset_ack
+			tx_ready                  : out std_logic_vector(0 downto 0);                     -- tx_ready
+			rx_ready                  : out std_logic_vector(0 downto 0);                     -- rx_ready
+			tx_coreclkin              : in  std_logic                     := 'X';             -- clk
+			rx_coreclkin              : in  std_logic                     := 'X';             -- clk
+			tx_clkout                 : out std_logic;                                        -- clk
+			rx_clkout                 : out std_logic;                                        -- clk
+			tx_serial_data            : out std_logic_vector(0 downto 0);                     -- tx_serial_data
+			tx_serial_data_n          : out std_logic_vector(0 downto 0);                     -- tx_serial_data_n
+			rx_serial_data            : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- rx_serial_data
+			rx_serial_data_n          : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- rx_serial_data_n
+			tx_pll_locked             : out std_logic_vector(0 downto 0);                     -- tx_pll_locked
+			rx_is_lockedtodata        : out std_logic_vector(0 downto 0);                     -- rx_is_lockedtodata
+			rx_is_lockedtoref         : out std_logic_vector(0 downto 0);                     -- rx_is_lockedtoref
+			tx_parallel_data          : in  std_logic_vector(79 downto 0) := (others => 'X'); -- tx_parallel_data
+			rx_parallel_data          : out std_logic_vector(79 downto 0);                    -- rx_parallel_data
+			reconfig_xcvr_clk         : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- clk
+			reconfig_xcvr_reset       : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- reset
+			reconfig_xcvr_write       : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- write
+			reconfig_xcvr_read        : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- read
+			reconfig_xcvr_address     : in  std_logic_vector(17 downto 0) := (others => 'X'); -- address
+			reconfig_xcvr_byteenable  : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- byteenable
+			reconfig_xcvr_writedata   : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			reconfig_xcvr_readdata    : out std_logic_vector(31 downto 0);                    -- readdata
+			reconfig_xcvr_waitrequest : out std_logic_vector(0 downto 0)                      -- waitrequest
+		);
+	end component ftile_xcvr_test_directphy_f_0;
+

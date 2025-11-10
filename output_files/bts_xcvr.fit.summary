@@ -1,0 +1,18 @@
+Fitter Status : Successful - Tue Oct 28 13:04:46 2025
+Quartus Prime Version : 24.2.0 Build 40 06/27/2024 SC Pro Edition
+Revision Name : bts_xcvr
+Top-level Entity Name : bts_xcvr
+Family : Agilex 7
+Device : AGIC040R39A2E2VR0
+Timing Models : Preliminary
+Power Models : Preliminary
+Device Status : Preliminary
+Logic utilization (in ALMs) : 43,813 / 1,372,000 ( 3 % )
+Total dedicated logic registers : 64424
+Total pins : 63 / 1,200 ( 5 % )
+Total block memory bits : 507,200 / 407,715,840 ( < 1 % )
+Total RAM Blocks : 35 / 19,908 ( < 1 % )
+Total DSP Blocks : 0 / 12,792 ( 0 % )
+Total eSRAMs : 0 / 3 ( 0 % )
+Total PLLs : 1 / 18 ( 6 % )
+Total FMICA_CORE : 0 / 4 ( 0 % )

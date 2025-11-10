@@ -1,0 +1,21 @@
+	component ftile_xcvr_test_xcvr_conduit_ctrl_0 is
+		port (
+			reset_n            : in  std_logic                     := 'X';             -- reset_n
+			clk                : in  std_logic                     := 'X';             -- clk
+			csr_address        : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- address
+			csr_read           : in  std_logic                     := 'X';             -- read
+			csr_write          : in  std_logic                     := 'X';             -- write
+			csr_readdata       : out std_logic_vector(31 downto 0);                    -- readdata
+			csr_writedata      : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			tx_pll_locked      : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- tx_pll_locked
+			rx_is_lockedtoref  : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- rx_is_lockedtoref
+			rx_is_lockedtodata : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- rx_is_lockedtodata
+			tx_reset           : out std_logic_vector(0 downto 0);                     -- tx_reset
+			tx_reset_ack       : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- tx_reset_ack
+			tx_ready           : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- tx_ready
+			rx_reset           : out std_logic_vector(0 downto 0);                     -- rx_reset
+			rx_reset_ack       : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- rx_reset_ack
+			rx_ready           : in  std_logic_vector(0 downto 0)  := (others => 'X')  -- rx_ready
+		);
+	end component ftile_xcvr_test_xcvr_conduit_ctrl_0;
+

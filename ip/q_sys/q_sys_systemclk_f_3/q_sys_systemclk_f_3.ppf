@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="systemclk_f_3"
+ megafunction_name="SYSTEMCLK_F"
+ intended_family="Agilex 7"
+ specifies="all_ports">
+ <global>
+  <pin name="out_systempll_synthlock_0" direction="output" scope="external" />
+  <pin name="out_systempll_clk_0" direction="output" scope="external" />
+  <pin name="out_refclk_fgt_4" direction="output" scope="external" />
+  <pin name="in_refclk_fgt_4" direction="input" scope="external" />
+  <pin name="disable_refclk_monitor_4" direction="input" scope="external" />
+ </global>
+</pinplan>

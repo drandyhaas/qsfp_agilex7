@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.10.27.20:16:34"
+ outputDirectory="C:/Users/Haas1S/Downloads/agilex_xcvr/qsfp_xcvr_012/ip/ftile_xcvr_test/ftile_xcvr_test_xcvr_st_converter_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Agilex 7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="AGIC040R39A2E2VR0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="Intel Agilex 7 FPGA I-Series Transceiver Development Kit 6xF-Tile DK-SI-AGI040FES"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_TX_CLKOUT_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_TX_CLKOUT_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_TX_CLKOUT_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RX_CLKOUT_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RX_CLKOUT_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_RX_CLKOUT_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="tx_parallel_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="tx_parallel_data"
+       direction="output"
+       role="tx_parallel_data"
+       width="80" />
+  </interface>
+  <interface name="tx_clkout" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="tx_clkout" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="rx_parallel_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port
+       name="rx_parallel_data"
+       direction="input"
+       role="rx_parallel_data"
+       width="80" />
+  </interface>
+  <interface name="rx_clkout" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="rx_clkout" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="tx_data_a" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="tx_data_a" direction="input" role="export" width="64" />
+  </interface>
+  <interface name="tx_clkout_a" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="tx_clkout_a" direction="output" role="export" width="1" />
+  </interface>
+  <interface name="rx_data_a" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rx_data_a" direction="output" role="export" width="64" />
+  </interface>
+  <interface name="rx_clkout_a" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="rx_clkout_a" direction="output" role="export" width="1" />
+  </interface>
+  <interface name="tx_clkout_sample" kind="clock" start="1">
+   <property name="associatedDirectClock" value="" />
+   <property name="clockRate" value="0" />
+   <property name="clockRateKnown" value="false" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="tx_clkout_sample" direction="output" role="clk" width="1" />
+  </interface>
+  <interface name="tx_clkout_a_output" kind="clock" start="1">
+   <property name="associatedDirectClock" value="" />
+   <property name="clockRate" value="0" />
+   <property name="clockRateKnown" value="false" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="tx_clkout_a_output" direction="output" role="clk" width="1" />
+  </interface>
+  <interface name="rx_clkout_a_output" kind="clock" start="1">
+   <property name="associatedDirectClock" value="" />
+   <property name="clockRate" value="0" />
+   <property name="clockRateKnown" value="false" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="rx_clkout_a_output" direction="output" role="clk" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="ftile_xcvr_test_xcvr_st_converter_0"
+   version="1.0"
+   name="ftile_xcvr_test_xcvr_st_converter_0">
+  <parameter name="AUTO_RX_CLKOUT_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="AGIC040R39A2E2VR0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Agilex 7" />
+  <parameter
+     name="AUTO_BOARD"
+     value="Intel Agilex 7 FPGA I-Series Transceiver Development Kit 6xF-Tile DK-SI-AGI040FES" />
+  <parameter name="AUTO_TX_CLKOUT_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_RX_CLKOUT_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_RX_CLKOUT_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_TX_CLKOUT_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <parameter name="AUTO_TX_CLKOUT_RESET_DOMAIN" value="-1" />
+  <generatedFiles>
+   <file
+       path="C:\Users\Haas1S\Downloads\agilex_xcvr\qsfp_xcvr_012\ip\ftile_xcvr_test\ftile_xcvr_test_xcvr_st_converter_0\synth\ftile_xcvr_test_xcvr_st_converter_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Users\Haas1S\Downloads\agilex_xcvr\qsfp_xcvr_012\ip\ftile_xcvr_test\ftile_xcvr_test_xcvr_st_converter_0\synth\ftile_xcvr_test_xcvr_st_converter_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Users/Haas1S/Downloads/agilex_xcvr/qsfp_xcvr_012/ip/ftile_xcvr_test/ftile_xcvr_test_xcvr_st_converter_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/Users/Haas1S/Downloads/agilex_xcvr/qsfp_xcvr_012/ip/xcvr_st_converter/xcvr_st_converter_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="ftile_xcvr_test_xcvr_st_converter_0">"Generating: ftile_xcvr_test_xcvr_st_converter_0"</message>
+   <message level="Info" culprit="ftile_xcvr_test_xcvr_st_converter_0">"Generating: xcvr_st_converter"</message>
+  </messages>
+ </entity>
+ <entity kind="xcvr_st_converter" version="1.0" name="xcvr_st_converter">
+  <parameter name="DATAWIDTH" value="80" />
+  <parameter name="NUM_OF_CH" value="1" />
+  <generatedFiles>
+   <file
+       path="C:\Users\Haas1S\Downloads\agilex_xcvr\qsfp_xcvr_012\ip\ftile_xcvr_test\ftile_xcvr_test_xcvr_st_converter_0\xcvr_st_converter_10\synth\xcvr_st_converter.v"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Users\Haas1S\Downloads\agilex_xcvr\qsfp_xcvr_012\ip\ftile_xcvr_test\ftile_xcvr_test_xcvr_st_converter_0\xcvr_st_converter_10\synth\xcvr_st_converter.v"
+       attributes="TOP_LEVEL_FILE" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Users/Haas1S/Downloads/agilex_xcvr/qsfp_xcvr_012/ip/xcvr_st_converter/xcvr_st_converter_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="ftile_xcvr_test_xcvr_st_converter_0"
+     as="xcvr_st_converter_0" />
+  <messages>
+   <message level="Info" culprit="ftile_xcvr_test_xcvr_st_converter_0">"Generating: xcvr_st_converter"</message>
+  </messages>
+ </entity>
+</deploy>

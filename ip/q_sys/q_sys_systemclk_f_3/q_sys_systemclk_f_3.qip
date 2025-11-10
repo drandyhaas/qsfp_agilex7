@@ -1,0 +1,49 @@
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name IP_TOOL_VERSION "24.2"
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name IP_TOP_LEVEL_COMPONENT_NAME "systemclk_f"
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name PRE_COMPILED_MODULE "ON"
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name OCS_IP_FILE "C:\Users\Haas1S\Downloads\agilex_xcvr\qsfp_xcvr_012_custom_25650.6\ip\q_sys\q_sys_systemclk_f_3.ip"
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name OCS_IP_TYPE "systemclk_f"
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name OCS_IP_VERSION "3.1.0"
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name OCS_IP_HASH "egj76yq"
+set_global_assignment -library "q_sys_systemclk_f_3" -name SOPCINFO_FILE [file join $::quartus(qip_path) "q_sys_systemclk_f_3.sopcinfo"]
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name SLD_INFO "QSYS_NAME q_sys_systemclk_f_3 HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "q_sys_systemclk_f_3" -name MISC_FILE [file join $::quartus(qip_path) "q_sys_systemclk_f_3.cmp"]
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "q_sys_systemclk_f_3" -name MISC_FILE [file join $::quartus(qip_path) "../q_sys_systemclk_f_3.ip"]
+
+set_global_assignment -entity "q_sys_systemclk_f_3_systemclk_f_310_egj76yq" -library "systemclk_f_310" -name IP_COMPONENT_NAME "cV9zeXNfc3lzdGVtY2xrX2ZfM19zeXN0ZW1jbGtfZl8zMTBfZWdqNzZ5cQ=="
+set_global_assignment -entity "q_sys_systemclk_f_3_systemclk_f_310_egj76yq" -library "systemclk_f_310" -name IP_COMPONENT_DISPLAY_NAME "Ri1UaWxlIFJlZmVyZW5jZSBhbmQgU3lzdGVtIFBMTCBDbG9ja3MgSW50ZWwgRlBHQSBJUA=="
+set_global_assignment -entity "q_sys_systemclk_f_3_systemclk_f_310_egj76yq" -library "systemclk_f_310" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "q_sys_systemclk_f_3_systemclk_f_310_egj76yq" -library "systemclk_f_310" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "q_sys_systemclk_f_3_systemclk_f_310_egj76yq" -library "systemclk_f_310" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "q_sys_systemclk_f_3_systemclk_f_310_egj76yq" -library "systemclk_f_310" -name IP_COMPONENT_VERSION "My4xLjA="
+set_global_assignment -entity "q_sys_systemclk_f_3_systemclk_f_310_egj76yq" -library "systemclk_f_310" -name IP_COMPONENT_DESCRIPTION "Ri1UaWxlIFJlZmVyZW5jZSBhbmQgU3lzdGVtUExMIENsb2Nrcy4="
+set_global_assignment -entity "q_sys_systemclk_f_3_systemclk_f_310_egj76yq" -library "systemclk_f_310" -name IP_COMPONENT_GROUP "SW50ZXJmYWNlIFByb3RvY29scy9UcmFuc2NlaXZlciBQSFk="
+set_global_assignment -entity "q_sys_systemclk_f_3_systemclk_f_310_egj76yq" -library "systemclk_f_310" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4Mzg3Mi5odG1s"
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name IP_COMPONENT_NAME "cV9zeXNfc3lzdGVtY2xrX2ZfMw=="
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "q_sys_systemclk_f_3" -library "q_sys_systemclk_f_3" -name IP_COMPONENT_VERSION "MS4w"
+
+set_instance_assignment -name QUICK_ELAB_TILE_IP "ctfb_tile" -entity q_sys_systemclk_f_3_systemclk_f_310_egj76yq
+set_instance_assignment -name QUICK_ELAB_TILE_IP_PROPERTY {{"SYSTEM_CLK_IP" : "yes", "NO_DR" : "yes"}} -entity q_sys_systemclk_f_3_systemclk_f_310_egj76yq
+set_instance_assignment -name REQUIRE_PLL_INITIALIZATION_CLOCK ON -to x_hip -entity q_sys_systemclk_f_3_systemclk_f_310_egj76yq
+
+set_global_assignment -library "systemclk_f_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "systemclk_f_310/synth/ft_avmm_32to8_bridge.sv"]
+set_global_assignment -library "systemclk_f_310" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "systemclk_f_310/synth/q_sys_systemclk_f_3_systemclk_f_310_egj76yq.sv"]
+set_instance_assignment -entity "q_sys_systemclk_f_3_systemclk_f_310_egj76yq" -library "systemclk_f_310" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "systemclk_f_310/synth/q_sys_systemclk_f_3_systemclk_f_310_egj76yq.sdc"] -no_sdc_promotion 
+set_global_assignment -library "q_sys_systemclk_f_3" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/q_sys_systemclk_f_3.v"]
+
+
+set_global_assignment -entity "q_sys_systemclk_f_3_systemclk_f_310_egj76yq" -library "systemclk_f_310" -name IP_TOOL_NAME "systemclk_f"
+set_global_assignment -entity "q_sys_systemclk_f_3_systemclk_f_310_egj76yq" -library "systemclk_f_310" -name IP_TOOL_VERSION "3.1.0"
+set_global_assignment -entity "q_sys_systemclk_f_3_systemclk_f_310_egj76yq" -library "systemclk_f_310" -name IP_TOOL_ENV "QsysPrimePro"
+

@@ -1,0 +1,16 @@
+	component ftile_xcvr_test_xcvr_st_converter_0 is
+		port (
+			tx_parallel_data   : out std_logic_vector(79 downto 0);                    -- tx_parallel_data
+			tx_clkout          : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- clk
+			rx_parallel_data   : in  std_logic_vector(79 downto 0) := (others => 'X'); -- rx_parallel_data
+			rx_clkout          : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- clk
+			tx_data_a          : in  std_logic_vector(63 downto 0) := (others => 'X'); -- export
+			tx_clkout_a        : out std_logic;                                        -- export
+			rx_data_a          : out std_logic_vector(63 downto 0);                    -- export
+			rx_clkout_a        : out std_logic;                                        -- export
+			tx_clkout_sample   : out std_logic;                                        -- clk
+			tx_clkout_a_output : out std_logic;                                        -- clk
+			rx_clkout_a_output : out std_logic                                         -- clk
+		);
+	end component ftile_xcvr_test_xcvr_st_converter_0;
+

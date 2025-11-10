@@ -1,0 +1,101 @@
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name IP_TOOL_VERSION "24.2"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name IP_TOP_LEVEL_COMPONENT_NAME "directphy_f"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name PRE_COMPILED_MODULE "ON"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name OCS_IP_FILE "C:\Users\Haas1S\Downloads\agilex_xcvr\qsfp_xcvr_012_custom_25650.6\ip\ftile_xcvr_test\ftile_xcvr_test_directphy_f_0.ip"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name OCS_IP_TYPE "directphy_f"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name OCS_IP_VERSION "4.9.0"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name OCS_IP_HASH "4ofwjdy"
+set_global_assignment -library "ftile_xcvr_test_directphy_f_0" -name SOPCINFO_FILE [file join $::quartus(qip_path) "ftile_xcvr_test_directphy_f_0.sopcinfo"]
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name SLD_INFO "QSYS_NAME ftile_xcvr_test_directphy_f_0 HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "ftile_xcvr_test_directphy_f_0" -name MISC_FILE [file join $::quartus(qip_path) "ftile_xcvr_test_directphy_f_0.cmp"]
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name IP_TARGETED_DEVICE_FAMILY "Agilex 7"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 7}"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "ftile_xcvr_test_directphy_f_0" -name MISC_FILE [file join $::quartus(qip_path) "../ftile_xcvr_test_directphy_f_0.ip"]
+
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_ftile_adme_100_4ofwjdy" -library "ftile_adme_100" -name IP_COMPONENT_NAME "ZnRpbGVfeGN2cl90ZXN0X2RpcmVjdHBoeV9mXzBfZnRpbGVfYWRtZV8xMDBfNG9md2pkeQ=="
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_ftile_adme_100_4ofwjdy" -library "ftile_adme_100" -name IP_COMPONENT_DISPLAY_NAME "U3lzdGVtIENvbnNvbGUgRGVidWcgYmxvY2sgZm9yIGhhcmR3YXJlIHRlc3Rpbmc="
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_ftile_adme_100_4ofwjdy" -library "ftile_adme_100" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_ftile_adme_100_4ofwjdy" -library "ftile_adme_100" -name IP_COMPONENT_INTERNAL "On"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_ftile_adme_100_4ofwjdy" -library "ftile_adme_100" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_ftile_adme_100_4ofwjdy" -library "ftile_adme_100" -name IP_COMPONENT_VERSION "MS4wLjA="
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_ftile_adme_100_4ofwjdy" -library "ftile_adme_100" -name IP_COMPONENT_GROUP "SW50ZXJmYWNlIFByb3RvY29scy9UcmFuc2NlaXZlciBQSFk="
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_ftile_adme_490_nft75ny" -library "directphy_f_490" -name IP_COMPONENT_NAME "ZnRpbGVfeGN2cl90ZXN0X2RpcmVjdHBoeV9mXzBfZGlyZWN0cGh5X2ZfZnRpbGVfYWRtZV80OTBfbmZ0NzVueQ=="
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_ftile_adme_490_nft75ny" -library "directphy_f_490" -name IP_COMPONENT_DISPLAY_NAME "ZnRpbGVfeGN2cl90ZXN0X2RpcmVjdHBoeV9mXzBfZGlyZWN0cGh5X2ZfZnRpbGVfYWRtZV80OTBfbmZ0NzVueQ=="
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_ftile_adme_490_nft75ny" -library "directphy_f_490" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_ftile_adme_490_nft75ny" -library "directphy_f_490" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_ftile_adme_490_nft75ny" -library "directphy_f_490" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_ftile_adme_490_nft75ny" -library "directphy_f_490" -name IP_COMPONENT_VERSION "NC45LjA="
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq" -library "directphy_f_490" -name IP_COMPONENT_NAME "ZnRpbGVfeGN2cl90ZXN0X2RpcmVjdHBoeV9mXzBfZGlyZWN0cGh5X2ZfNDkwX3dwNGoyaXE="
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq" -library "directphy_f_490" -name IP_COMPONENT_DISPLAY_NAME "Ri1UaWxlIFBNQS9GRUMgRGlyZWN0IFBIWSBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq" -library "directphy_f_490" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq" -library "directphy_f_490" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq" -library "directphy_f_490" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq" -library "directphy_f_490" -name IP_COMPONENT_VERSION "NC45LjA="
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq" -library "directphy_f_490" -name IP_COMPONENT_DESCRIPTION "Ri1UaWxlIFBNQS9GRUMgRGlyZWN0IFBIWSBJbnRlbCBGUEdBIElQLg=="
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq" -library "directphy_f_490" -name IP_COMPONENT_GROUP "SW50ZXJmYWNlIFByb3RvY29scy9UcmFuc2NlaXZlciBQSFk="
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq" -library "directphy_f_490" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4Mzg3Mi5odG1s"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq" -library "directphy_f_490" -name IP_COMPONENT_DOCUMENTATION_LINK "aHR0cHM6Ly93d3cuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2RvY3MvcHJvZ3JhbW1hYmxlLzY4MzU2My5odG1s"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name IP_COMPONENT_NAME "ZnRpbGVfeGN2cl90ZXN0X2RpcmVjdHBoeV9mXzA="
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0" -library "ftile_xcvr_test_directphy_f_0" -name IP_COMPONENT_VERSION "MS4w"
+
+set_instance_assignment -name HSSI_PARAMETER "txeq_post_tap_1=0" -to dphy_hip_inst|persystem[0].perxcvr[0].fgt.tx_ux.x_bb_f_ux_tx -entity ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq
+set_instance_assignment -name HSSI_PARAMETER "txeq_main_tap=35" -to dphy_hip_inst|persystem[0].perxcvr[0].fgt.tx_ux.x_bb_f_ux_tx -entity ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq
+set_instance_assignment -name HSSI_PARAMETER "txeq_pre_tap_1=5" -to dphy_hip_inst|persystem[0].perxcvr[0].fgt.tx_ux.x_bb_f_ux_tx -entity ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq
+set_instance_assignment -name HSSI_PARAMETER "txeq_pre_tap_2=0" -to dphy_hip_inst|persystem[0].perxcvr[0].fgt.tx_ux.x_bb_f_ux_tx -entity ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq
+set_instance_assignment -name HSSI_PARAMETER "rx_onchip_termination=RX_ONCHIP_TERMINATION_R_2" -to dphy_hip_inst|persystem[0].perxcvr[0].fgt.rx_ux.x_bb_f_ux_rx  -entity ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq
+set_instance_assignment -name HSSI_PARAMETER "rx_ac_couple_enable=ENABLE" -to dphy_hip_inst|persystem[0].perxcvr[0].fgt.rx_ux.x_bb_f_ux_rx -entity ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq
+set_instance_assignment -name HSSI_PARAMETER "vsr_mode=VSR_MODE_DISABLE" -to dphy_hip_inst|persystem[0].perxcvr[0].fgt.rx_ux.x_bb_f_ux_rx -entity ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq
+set_instance_assignment -name HSSI_PARAMETER "rxeq_vga_gain=60" -to dphy_hip_inst|persystem[0].perxcvr[0].fgt.rx_ux.x_bb_f_ux_rx -entity ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq
+set_instance_assignment -name HSSI_PARAMETER "rxeq_hf_boost=0" -to dphy_hip_inst|persystem[0].perxcvr[0].fgt.rx_ux.x_bb_f_ux_rx -entity ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq
+set_instance_assignment -name HSSI_PARAMETER "rxeq_dfe_data_tap_1=0" -to dphy_hip_inst|persystem[0].perxcvr[0].fgt.rx_ux.x_bb_f_ux_rx -entity ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq
+set_instance_assignment -name QUICK_ELAB_TILE_IP "ctfb_tile" -entity ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq
+
+set_global_assignment -library "ftile_adme_100" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ftile_adme_100/synth/ftile_xcvr_test_directphy_f_0_ftile_adme_100_4ofwjdy.sv"]
+set_global_assignment -library "ftile_adme_100" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ftile_adme_100/synth/alt_xcvr_avmm_arb.sv"]
+set_global_assignment -library "ftile_adme_100" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "ftile_adme_100/synth/alt_xcvr_arbiter.sv"]
+set_global_assignment -library "directphy_f_490" -name VERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/ftile_xcvr_test_directphy_f_0_directphy_f_ftile_adme_490_nft75ny.v"]
+set_global_assignment -library "directphy_f_490" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/dphy_f_avmm1.sv"]
+set_global_assignment -library "directphy_f_490" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/dphy_f_avmm2.sv"]
+set_global_assignment -library "directphy_f_490" -name VERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/dphy_f_csr_wrap.v"]
+set_global_assignment -library "directphy_f_490" -name VERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/dphy_f_ccg.v"]
+set_global_assignment -library "directphy_f_490" -name VERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/directphy_f_gray_cntr_3.v"]
+set_global_assignment -library "directphy_f_490" -name VERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/directphy_f_gray_cntr_5_sl.v"]
+set_global_assignment -library "directphy_f_490" -name VERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/directphy_f_sync_regs_aclr_m2.v"]
+set_global_assignment -library "directphy_f_490" -name VERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/directphy_f_eq_5_ena.v"]
+set_global_assignment -library "directphy_f_490" -name VERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/directphy_f_neq_5_ena.v"]
+set_global_assignment -library "directphy_f_490" -name VERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/directphy_f_wys_lut.v"]
+set_global_assignment -library "directphy_f_490" -name VERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/dphy_f_sip_csr.v"]
+set_global_assignment -library "directphy_f_490" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/dphy_f_tx_dsk_gen.sv"]
+set_global_assignment -library "directphy_f_490" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/directphy_f_rx_deskew.sv"]
+set_global_assignment -library "directphy_f_490" -name VERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/directphy_f_word_delay.v"]
+set_global_assignment -library "directphy_f_490" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/directphy_f_mlab.v"]
+set_global_assignment -library "directphy_f_490" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/ft_avmm_32to8_bridge.sv"]
+set_global_assignment -library "directphy_f_490" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/alt_xcvr_resync_etile.sv"]
+set_global_assignment -library "directphy_f_490" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/altera_std_synchronizer_nocut_etile.v"]
+set_global_assignment -library "directphy_f_490" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/directphy_f_soft_cwbin_counter.sv"]
+set_global_assignment -library "directphy_f_490" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/dphy_f_rcfg_arb.sv"]
+set_global_assignment -library "directphy_f_490" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/dphy_f_alt_xcvr_arbiter.sv"]
+set_global_assignment -library "directphy_f_490" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq.sv"]
+set_global_assignment -library "directphy_f_490" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/directphy_f_hip.sv"]
+set_instance_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq" -library "directphy_f_490" -name SDC_ENTITY_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq.sdc"] -no_sdc_promotion 
+set_global_assignment -library "directphy_f_490" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/directphy_f_sip_490_wp4j2iq.sv"]
+set_instance_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq" -library "directphy_f_490" -name TCL_ENTITY_FILE [file join $::quartus(qip_path) "directphy_f_490/synth/ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq_ip_parameters.tcl"]
+set_global_assignment -library "ftile_xcvr_test_directphy_f_0" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/ftile_xcvr_test_directphy_f_0.v"]
+
+
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq" -library "directphy_f_490" -name IP_TOOL_NAME "directphy_f"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq" -library "directphy_f_490" -name IP_TOOL_VERSION "4.9.0"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_directphy_f_490_wp4j2iq" -library "directphy_f_490" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_ftile_adme_100_4ofwjdy" -library "ftile_adme_100" -name IP_TOOL_NAME "ftile_adme"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_ftile_adme_100_4ofwjdy" -library "ftile_adme_100" -name IP_TOOL_VERSION "1.0.0"
+set_global_assignment -entity "ftile_xcvr_test_directphy_f_0_ftile_adme_100_4ofwjdy" -library "ftile_adme_100" -name IP_TOOL_ENV "QsysPrimePro"
+

@@ -1,0 +1,889 @@
+Fitter Route Stage Report for bts_xcvr
+Tue Oct 28 13:01:43 2025
+Quartus Prime Version 24.2.0 Build 40 06/27/2024 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Nets with Highest Wire Count
+  3. Delay Chain Summary
+  4. Routing Usage Summary
+  5. Route Messages
+  6. Estimated Delay Added for Hold Timing Summary
+  7. Estimated Delay Added for Hold Timing Details
+  8. Global Router Congestion Hotspot Summary
+  9. Global Router Wire Utilization Map
+ 10. Peak Wire Demand Summary
+ 11. Peak Wire Demand Details
+ 12. Peak Total Grid Crossings
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Nets with Highest Wire Count                                                                                                                                ;
++-----------------------------------------------------------------------------------------------------------------------------+----------------------+--------+
+; Net                                                                                                                         ; Number of Wires Used ; Fanout ;
++-----------------------------------------------------------------------------------------------------------------------------+----------------------+--------+
+; global_resetn                                                                                                               ; 479                  ; 81     ;
+; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|ctrl_addr[1] ; 288                  ; 240    ;
+; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|ctrl_addr[1] ; 269                  ; 240    ;
+; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|ctrl_addr[0] ; 267                  ; 203    ;
+; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|ctrl_addr[0] ; 260                  ; 203    ;
+; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|ctrl_addr[1] ; 255                  ; 240    ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset|user_reset|conf_reset                                              ; 238                  ; 17     ;
+; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|ctrl_addr[0] ; 235                  ; 203    ;
+; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|ctrl_addr[3] ; 232                  ; 182    ;
+; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|ctrl_addr[2] ; 227                  ; 155    ;
++-----------------------------------------------------------------------------------------------------------------------------+----------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                                                                                                    ;
++-----------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; Name                  ; Pin Type ; Input Delay Chain 0 ; Output Delay Chain ; OE Delay Chain ; IO_12_LANE Input Data Delay Chain ; IO_12_LANE Input Strobe Delay Chain ;
++-----------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; qsfp1_tx_p[0]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp1_tx_p[1]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp1_tx_p[2]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp1_tx_p[3]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp1_tx_n[0]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp1_tx_n[1]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp1_tx_n[2]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp1_tx_n[3]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp0_tx_p[0]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp0_tx_p[1]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp0_tx_p[2]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp0_tx_p[3]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp0_tx_n[0]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp0_tx_n[1]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp0_tx_n[2]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp0_tx_n[3]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp2_tx_p[0]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp2_tx_p[1]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp2_tx_p[2]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp2_tx_p[3]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp2_tx_n[0]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp2_tx_n[1]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp2_tx_n[2]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; qsfp2_tx_n[3]         ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; fpga_sgpo             ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; fpga_sgpi             ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; si5395_1_1v2_a_oen    ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; si5395_2_1v2_a_oen    ; Output   ; --                  ; 0                  ; --             ; --                                ; --                                  ;
+; refclk_fgt13Ach4_p    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp1_rx_n[3]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp1_rx_n[2]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp1_rx_n[1]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp1_rx_n[0]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp1_rx_p[3]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp1_rx_p[2]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp1_rx_p[1]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp1_rx_p[0]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; refclk_fgt13Cch4_p    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp0_rx_n[3]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp0_rx_n[2]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp0_rx_n[1]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp0_rx_n[0]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp0_rx_p[3]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp0_rx_p[2]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp0_rx_p[1]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp0_rx_p[0]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; refclk_fgt13Ach2_p    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp2_rx_n[3]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp2_rx_n[2]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp2_rx_n[1]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp2_rx_n[0]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp2_rx_p[3]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp2_rx_p[2]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp2_rx_p[1]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; qsfp2_rx_p[0]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fpga_sgpio_sync       ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fpga_sgpio_clk        ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; cpu_1v2_resetn        ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; clk_sys_100m_p        ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; refclk_fgt13Ach4_p(n) ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; refclk_fgt13Cch4_p(n) ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; refclk_fgt13Ach2_p(n) ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; clk_sys_100m_p(n)     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
++-----------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+
+
++--------------------------------------------------------------+
+; Routing Usage Summary                                        ;
++-----------------------------+--------------------------------+
+; Routing Resource Type       ; Usage                          ;
++-----------------------------+--------------------------------+
+; Block Input Mux Wrapbacks   ; 811 / 1,446,480 ( < 1 % )      ;
+; Block Input Muxes           ; 308,517 / 15,842,400 ( 2 % )   ;
+; Block interconnects         ; 215,592 / 18,577,920 ( 1 % )   ;
+; C1 interconnects            ; 96,145 / 7,760,640 ( 1 % )     ;
+; C4 interconnects            ; 59,909 / 7,399,680 ( < 1 % )   ;
+; C8 interconnects            ; 2,238 / 739,968 ( < 1 % )      ;
+; DCM_muxes                   ; 62 / 1,504 ( 4 % )             ;
+; DELAY_CHAINs                ; 0 / 47,792 ( 0 % )             ;
+; Direct links                ; 36,250 / 18,577,920 ( < 1 % )  ;
+; HIO Buffers                 ; 2,424 / 110,208 ( 2 % )        ;
+; Programmable Invert Buffers ; 0 / 560 ( 0 % )                ;
+; Programmable Invert Inputs  ; 13,780 / 1,384,800 ( < 1 % )   ;
+; Programmable Inverts        ; 13,780 / 1,384,800 ( < 1 % )   ;
+; R0 interconnects            ; 126,323 / 12,949,440 ( < 1 % ) ;
+; R1 interconnects            ; 73,793 / 7,399,680 ( < 1 % )   ;
+; R12 interconnects           ; 2,072 / 1,109,952 ( < 1 % )    ;
+; R2 interconnects            ; 29,654 / 3,709,680 ( < 1 % )   ;
+; R4 interconnects            ; 20,129 / 3,729,360 ( < 1 % )   ;
+; R6 interconnects            ; 36,108 / 3,739,200 ( < 1 % )   ;
+; Redundancy Muxes            ; 6,559 / 218,448 ( 3 % )        ;
+; Row Clock Tap-Offs          ; 6,978 / 1,109,952 ( < 1 % )    ;
+; Switchbox_clock_muxes       ; 741 / 33,280 ( 2 % )           ;
+; VIO Buffers                 ; 7 / 22,400 ( < 1 % )           ;
+; Vertical_seam_tap_muxes     ; 613 / 18,432 ( 3 % )           ;
++-----------------------------+--------------------------------+
+
+
++----------------+
+; Route Messages ;
++----------------+
+Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 24.2.0 Build 40 06/27/2024 SC Pro Edition
+    Info: Processing started: Tue Oct 28 12:46:39 2025
+    Info: System process ID: 1268
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off bts_xcvr -c bts_xcvr
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = bts_xcvr
+Info: Revision = bts_xcvr
+Info (22300): Design uses Placement Effort Multiplier = 1.0.
+Info (170193): Fitter routing operations beginning
+Info (20215): Router estimated peak short interconnect demand : 45% of up directional wire in region X0_Y456 to X11_Y463
+    Info (20265): Estimated peak short right directional wire demand : 21% in region X0_Y400 to X11_Y407
+    Info (20265): Estimated peak short left directional wire demand : 18% in region X12_Y384 to X23_Y391
+    Info (20265): Estimated peak short up directional wire demand : 45% in region X0_Y456 to X11_Y463
+    Info (20265): Estimated peak short down directional wire demand : 30% in region X0_Y184 to X11_Y191
+Info (20215): Router estimated peak long high speed interconnect demand : 110% of right directional wire in region X372_Y56 to X383_Y63
+    Info (20265): Estimated peak long high speed right directional wire demand : 110% in region X372_Y56 to X383_Y63
+    Info (20265): Estimated peak long high speed left directional wire demand : 94% in region X384_Y120 to X395_Y127
+    Info (20265): Estimated peak long high speed up directional wire demand : 96% in region X12_Y384 to X23_Y391
+    Info (20265): Estimated peak long high speed down directional wire demand : 99% in region X372_Y80 to X383_Y87
+    Info (20315): Note that the router may use short wires to implement long connections at higher delay
+Info (170239): Router is attempting to preserve 0.05 percent of routes from an earlier compilation, a user specified Routing Constraints File, or internal routing requirements.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 100 degrees C
+Info (11888): Total time spent on timing analysis during Routing is 17.05 seconds.
+Warning (18291): Timing characteristics of device AGIC040R39A2E2VR0 are preliminary
+Info: Following instance found in the design -  q_sys_u0|master_0|master_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|master_0|master_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|master_0|master_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|master_0|master_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_0|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_1|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_10|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_11|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_2|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_3|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_4|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_5|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_6|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_7|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_8|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|xcvr_test_system_0|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|xcvr_test_system_0|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|rst_controller|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|rst_controller_001|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|rst_controller_002|*
+Info: Following instance found in the design -  q_sys_u0|ftile_xcvr_test_9|rst_controller_003|*
+Info: Following instance found in the design -  q_sys_u0|rst_controller|*
+Info: Following instance found in the design -  auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|stfabric|mgmt_rst_synch_0|*
+Info (16607): Fitter routing operations ending: elapsed time is 00:04:55
+
+
++-------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                           ;
++--------------------------+--------------------------+-------------------+
+; Source Clock(s)          ; Destination Clock(s)     ; Delay Added in ns ;
++--------------------------+--------------------------+-------------------+
+; iopll_u0|iopll_0_outclk1 ; iopll_u0|iopll_0_outclk0 ; 104.6             ;
+; iopll_u0|iopll_0_outclk0 ; iopll_u0|iopll_0_outclk1 ; 61.4              ;
+; iopll_u0|iopll_0_outclk0 ; iopll_u0|iopll_0_outclk0 ; 17.0              ;
+; iopll_u0|iopll_0_outclk1 ; iopll_u0|iopll_0_outclk1 ; 6.4               ;
++--------------------------+--------------------------+-------------------+
+Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
+This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                                                                                                               ;
++------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+-------------------+
+; Source Register                                                                          ; Destination Register                                                                         ; Delay Added in ns ;
++------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+-------------------+
+; q_sys_u0|master_0|master_0|transacto|p2m|byteenable[0]                                   ; q_sys_u0|master_0|master_0|transacto|p2m|byteenable[0]                                       ; 0.201             ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|host_link_jtag|p2b|stored_channel[6]              ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|host_link_jtag|p2b|channel_count[1]                   ; 0.157             ;
+; q_sys_u0|ftile_xcvr_test_7|mm_interconnect_0|crosser|clock_xer|in_data_buffer[27]        ; q_sys_u0|ftile_xcvr_test_7|mm_interconnect_0|crosser|clock_xer|out_data_buffer[27]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser|clock_xer|in_data_buffer[2]         ; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser|clock_xer|out_data_buffer[2]            ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_11|mm_interconnect_0|crosser|clock_xer|in_data_buffer[4]        ; q_sys_u0|ftile_xcvr_test_11|mm_interconnect_0|crosser|clock_xer|out_data_buffer[4]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_1|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[2]     ; q_sys_u0|ftile_xcvr_test_1|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[2]        ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser|clock_xer|in_data_buffer[60]       ; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser|clock_xer|out_data_buffer[60]          ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser|clock_xer|in_data_buffer[1]         ; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser|clock_xer|out_data_buffer[1]            ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_4|mm_interconnect_0|crosser|clock_xer|in_data_buffer[23]        ; q_sys_u0|ftile_xcvr_test_4|mm_interconnect_0|crosser|clock_xer|out_data_buffer[23]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_11|mm_interconnect_0|crosser|clock_xer|in_data_buffer[53]       ; q_sys_u0|ftile_xcvr_test_11|mm_interconnect_0|crosser|clock_xer|out_data_buffer[53]          ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_6|mm_interconnect_0|crosser|clock_xer|in_data_buffer[50]        ; q_sys_u0|ftile_xcvr_test_6|mm_interconnect_0|crosser|clock_xer|out_data_buffer[50]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser|clock_xer|in_data_buffer[0]        ; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser|clock_xer|out_data_buffer[0]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_8|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[13]    ; q_sys_u0|ftile_xcvr_test_8|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[13]       ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_9|mm_interconnect_0|crosser|clock_xer|in_data_buffer[6]         ; q_sys_u0|ftile_xcvr_test_9|mm_interconnect_0|crosser|clock_xer|out_data_buffer[6]            ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser|clock_xer|in_data_buffer[53]       ; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser|clock_xer|out_data_buffer[53]          ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_7|mm_interconnect_0|crosser|clock_xer|in_data_buffer[51]        ; q_sys_u0|ftile_xcvr_test_7|mm_interconnect_0|crosser|clock_xer|out_data_buffer[51]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_8|mm_interconnect_0|crosser|clock_xer|in_data_buffer[40]        ; q_sys_u0|ftile_xcvr_test_8|mm_interconnect_0|crosser|clock_xer|out_data_buffer[40]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser|clock_xer|in_data_buffer[53]        ; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser|clock_xer|out_data_buffer[53]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_9|mm_interconnect_0|crosser|clock_xer|in_data_buffer[32]        ; q_sys_u0|ftile_xcvr_test_9|mm_interconnect_0|crosser|clock_xer|out_data_buffer[32]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_4|mm_interconnect_0|crosser|clock_xer|in_data_buffer[15]        ; q_sys_u0|ftile_xcvr_test_4|mm_interconnect_0|crosser|clock_xer|out_data_buffer[15]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_0|mm_interconnect_0|crosser|clock_xer|in_data_buffer[2]         ; q_sys_u0|ftile_xcvr_test_0|mm_interconnect_0|crosser|clock_xer|out_data_buffer[2]            ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_6|mm_interconnect_0|crosser|clock_xer|in_data_buffer[42]        ; q_sys_u0|ftile_xcvr_test_6|mm_interconnect_0|crosser|clock_xer|out_data_buffer[42]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_1|mm_interconnect_0|crosser|clock_xer|in_data_buffer[6]         ; q_sys_u0|ftile_xcvr_test_1|mm_interconnect_0|crosser|clock_xer|out_data_buffer[6]            ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_3|mm_interconnect_0|crosser|clock_xer|out_data_toggle_flopped_n ; q_sys_u0|ftile_xcvr_test_3|mm_interconnect_0|crosser|clock_xer|out_to_in_synchronizer|din_s1 ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_9|mm_interconnect_0|crosser|clock_xer|in_data_buffer[8]         ; q_sys_u0|ftile_xcvr_test_9|mm_interconnect_0|crosser|clock_xer|out_data_buffer[8]            ; 0.150             ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|stfabric|h2t0_fifo|in_wr_ptr_gray[2]              ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|stfabric|h2t0_fifo|write_crosser|sync[2].u|din_s1     ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser|clock_xer|in_data_buffer[23]        ; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser|clock_xer|out_data_buffer[23]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_7|mm_interconnect_0|crosser|clock_xer|in_data_buffer[19]        ; q_sys_u0|ftile_xcvr_test_7|mm_interconnect_0|crosser|clock_xer|out_data_buffer[19]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser|clock_xer|in_data_buffer[6]         ; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser|clock_xer|out_data_buffer[6]            ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_8|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[22]    ; q_sys_u0|ftile_xcvr_test_8|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[22]       ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_1|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[10]    ; q_sys_u0|ftile_xcvr_test_1|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[10]       ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_4|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[4]     ; q_sys_u0|ftile_xcvr_test_4|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[4]        ; 0.150             ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|stfabric|t2h0_fifo|out_rd_ptr_gray[3]             ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|stfabric|t2h0_fifo|read_crosser|sync[3].u|din_s1      ; 0.150             ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|stfabric|t2h0_fifo|out_rd_ptr_gray[0]             ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|stfabric|t2h0_fifo|read_crosser|sync[0].u|din_s1      ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_9|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[27]    ; q_sys_u0|ftile_xcvr_test_9|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[27]       ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_11|mm_interconnect_0|crosser|clock_xer|in_data_buffer[21]       ; q_sys_u0|ftile_xcvr_test_11|mm_interconnect_0|crosser|clock_xer|out_data_buffer[21]          ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_9|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[9]     ; q_sys_u0|ftile_xcvr_test_9|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[9]        ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser|clock_xer|in_data_buffer[23]       ; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser|clock_xer|out_data_buffer[23]          ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser|clock_xer|in_data_buffer[21]        ; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser|clock_xer|out_data_buffer[21]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser|clock_xer|in_data_buffer[35]        ; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser|clock_xer|out_data_buffer[35]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_9|mm_interconnect_0|crosser|clock_xer|in_data_buffer[60]        ; q_sys_u0|ftile_xcvr_test_9|mm_interconnect_0|crosser|clock_xer|out_data_buffer[60]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser|clock_xer|in_data_buffer[24]        ; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser|clock_xer|out_data_buffer[24]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_6|mm_interconnect_0|crosser|clock_xer|in_data_buffer[47]        ; q_sys_u0|ftile_xcvr_test_6|mm_interconnect_0|crosser|clock_xer|out_data_buffer[47]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser|clock_xer|in_data_buffer[2]        ; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser|clock_xer|out_data_buffer[2]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser|clock_xer|in_data_buffer[15]        ; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser|clock_xer|out_data_buffer[15]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_4|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[18]    ; q_sys_u0|ftile_xcvr_test_4|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[18]       ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[12]    ; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[12]       ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_1|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[27]    ; q_sys_u0|ftile_xcvr_test_1|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[27]       ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser|clock_xer|in_data_buffer[16]        ; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser|clock_xer|out_data_buffer[16]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_1|mm_interconnect_0|crosser|clock_xer|in_data_buffer[35]        ; q_sys_u0|ftile_xcvr_test_1|mm_interconnect_0|crosser|clock_xer|out_data_buffer[35]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_9|mm_interconnect_0|crosser|clock_xer|in_data_buffer[50]        ; q_sys_u0|ftile_xcvr_test_9|mm_interconnect_0|crosser|clock_xer|out_data_buffer[50]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_11|mm_interconnect_0|crosser|clock_xer|in_data_buffer[9]        ; q_sys_u0|ftile_xcvr_test_11|mm_interconnect_0|crosser|clock_xer|out_data_buffer[9]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser|clock_xer|in_data_buffer[28]        ; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser|clock_xer|out_data_buffer[28]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[7]     ; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[7]        ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser|clock_xer|in_data_buffer[11]        ; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser|clock_xer|out_data_buffer[11]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_6|mm_interconnect_0|crosser|clock_xer|in_data_buffer[55]        ; q_sys_u0|ftile_xcvr_test_6|mm_interconnect_0|crosser|clock_xer|out_data_buffer[55]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_3|mm_interconnect_0|crosser|clock_xer|in_data_buffer[32]        ; q_sys_u0|ftile_xcvr_test_3|mm_interconnect_0|crosser|clock_xer|out_data_buffer[32]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_3|mm_interconnect_0|crosser|clock_xer|in_data_buffer[59]        ; q_sys_u0|ftile_xcvr_test_3|mm_interconnect_0|crosser|clock_xer|out_data_buffer[58]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[17]    ; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[17]       ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_7|mm_interconnect_0|crosser|clock_xer|in_data_buffer[8]         ; q_sys_u0|ftile_xcvr_test_7|mm_interconnect_0|crosser|clock_xer|out_data_buffer[8]            ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_8|mm_interconnect_0|crosser|clock_xer|in_data_buffer[13]        ; q_sys_u0|ftile_xcvr_test_8|mm_interconnect_0|crosser|clock_xer|out_data_buffer[13]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_11|mm_interconnect_0|crosser|clock_xer|in_data_buffer[25]       ; q_sys_u0|ftile_xcvr_test_11|mm_interconnect_0|crosser|clock_xer|out_data_buffer[25]          ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[27]    ; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[27]       ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[5]     ; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[5]        ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_0|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[12]    ; q_sys_u0|ftile_xcvr_test_0|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[12]       ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_1|mm_interconnect_0|crosser|clock_xer|in_data_buffer[19]        ; q_sys_u0|ftile_xcvr_test_1|mm_interconnect_0|crosser|clock_xer|out_data_buffer[19]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_7|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[5]     ; q_sys_u0|ftile_xcvr_test_7|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[5]        ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_4|mm_interconnect_0|crosser|clock_xer|in_data_buffer[53]        ; q_sys_u0|ftile_xcvr_test_4|mm_interconnect_0|crosser|clock_xer|out_data_buffer[53]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser|clock_xer|in_data_buffer[13]       ; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser|clock_xer|out_data_buffer[13]          ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_6|mm_interconnect_0|crosser|clock_xer|in_data_buffer[18]        ; q_sys_u0|ftile_xcvr_test_6|mm_interconnect_0|crosser|clock_xer|out_data_buffer[18]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser|clock_xer|in_data_buffer[26]        ; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser|clock_xer|out_data_buffer[26]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_9|mm_interconnect_0|crosser|clock_xer|in_data_buffer[25]        ; q_sys_u0|ftile_xcvr_test_9|mm_interconnect_0|crosser|clock_xer|out_data_buffer[25]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[3]     ; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[3]        ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser|clock_xer|in_data_buffer[60]        ; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser|clock_xer|out_data_buffer[60]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser|clock_xer|in_data_buffer[42]       ; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser|clock_xer|out_data_buffer[42]          ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_6|mm_interconnect_0|crosser|clock_xer|in_data_buffer[16]        ; q_sys_u0|ftile_xcvr_test_6|mm_interconnect_0|crosser|clock_xer|out_data_buffer[16]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_1|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[11]    ; q_sys_u0|ftile_xcvr_test_1|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[11]       ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_7|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[1]     ; q_sys_u0|ftile_xcvr_test_7|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[1]        ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_3|mm_interconnect_0|crosser|clock_xer|in_data_buffer[22]        ; q_sys_u0|ftile_xcvr_test_3|mm_interconnect_0|crosser|clock_xer|out_data_buffer[22]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser|clock_xer|in_data_buffer[25]        ; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser|clock_xer|out_data_buffer[25]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[0]     ; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[0]        ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_6|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[31]    ; q_sys_u0|ftile_xcvr_test_6|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[31]       ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[25]   ; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[25]      ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_8|mm_interconnect_0|crosser|clock_xer|in_data_buffer[7]         ; q_sys_u0|ftile_xcvr_test_8|mm_interconnect_0|crosser|clock_xer|out_data_buffer[7]            ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_3|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[24]    ; q_sys_u0|ftile_xcvr_test_3|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[24]       ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_7|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[0]     ; q_sys_u0|ftile_xcvr_test_7|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[0]        ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_3|mm_interconnect_0|crosser|clock_xer|in_data_buffer[51]        ; q_sys_u0|ftile_xcvr_test_3|mm_interconnect_0|crosser|clock_xer|out_data_buffer[51]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_8|mm_interconnect_0|crosser|clock_xer|in_data_buffer[10]        ; q_sys_u0|ftile_xcvr_test_8|mm_interconnect_0|crosser|clock_xer|out_data_buffer[10]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_1|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[21]    ; q_sys_u0|ftile_xcvr_test_1|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[21]       ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_0|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[9]     ; q_sys_u0|ftile_xcvr_test_0|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[9]        ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_7|mm_interconnect_0|crosser|clock_xer|in_data_buffer[48]        ; q_sys_u0|ftile_xcvr_test_7|mm_interconnect_0|crosser|clock_xer|out_data_buffer[48]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_1|mm_interconnect_0|crosser|clock_xer|in_data_buffer[9]         ; q_sys_u0|ftile_xcvr_test_1|mm_interconnect_0|crosser|clock_xer|out_data_buffer[9]            ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser|clock_xer|in_data_buffer[30]       ; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser|clock_xer|out_data_buffer[30]          ; 0.150             ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|stfabric|t2h0_fifo|in_wr_ptr_gray[4]              ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|stfabric|t2h0_fifo|write_crosser|sync[4].u|din_s1     ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser|clock_xer|in_data_buffer[1]         ; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser|clock_xer|out_data_buffer[1]            ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser|clock_xer|in_data_buffer[17]        ; q_sys_u0|ftile_xcvr_test_2|mm_interconnect_0|crosser|clock_xer|out_data_buffer[17]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_4|mm_interconnect_0|crosser|clock_xer|out_data_toggle_flopped_n ; q_sys_u0|ftile_xcvr_test_4|mm_interconnect_0|crosser|clock_xer|out_to_in_synchronizer|din_s1 ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser_001|clock_xer|in_data_buffer[13]   ; q_sys_u0|ftile_xcvr_test_10|mm_interconnect_0|crosser_001|clock_xer|out_data_buffer[13]      ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser|clock_xer|in_data_buffer[52]        ; q_sys_u0|ftile_xcvr_test_5|mm_interconnect_0|crosser|clock_xer|out_data_buffer[52]           ; 0.150             ;
+; q_sys_u0|ftile_xcvr_test_11|mm_interconnect_0|crosser|clock_xer|in_data_buffer[16]       ; q_sys_u0|ftile_xcvr_test_11|mm_interconnect_0|crosser|clock_xer|out_data_buffer[16]          ; 0.150             ;
++------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+-------------------+
+Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
+
+
+--------------------------------------------
+; Global Router Congestion Hotspot Summary ;
+--------------------------------------------
+No congestion hotspots found where global router short wire usage exceeded 100%.
+If the design is hard to route, use other techniques to analyze congestion. Refer to the Estimated Delay Added for Hold Timing section in the Fitter report and routing utilization in the Chip Planner.
+
+
+--------------------------------------
+; Global Router Wire Utilization Map ;
+--------------------------------------
+This report is unavailable in plain text report export.
+
+
++-------------------------------------------------------------------------------+
+; Peak Wire Demand Summary                                                      ;
++-----------------+-----------+-----------------------------------+-------------+
+; Wire            ; Direction ; Grid [(Xmin, Ymin), (Xmax, Ymax)] ; Peak Demand ;
++-----------------+-----------+-----------------------------------+-------------+
+; short           ; right     ; [(0, 400), (11, 407)]             ; 21.528 %    ;
+; short           ; left      ; [(12, 384), (23, 391)]            ; 18.625 %    ;
+; short           ; up        ; [(0, 456), (11, 463)]             ; 45.000 %    ;
+; short           ; down      ; [(0, 184), (11, 191)]             ; 30.000 %    ;
+; long high speed ; right     ; [(0, 296), (11, 303)]             ; 100.000 %   ;
+; long high speed ; left      ; [(384, 120), (395, 127)]          ; 94.444 %    ;
+; long high speed ; up        ; [(12, 384), (23, 391)]            ; 96.429 %    ;
+; long high speed ; down      ; [(372, 80), (383, 87)]            ; 99.405 %    ;
++-----------------+-----------+-----------------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Peak Wire Demand Details                                                                                                                                                                                                                                                                                                               ;
++-----------------+-----------+-----------------------------------+-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Wire            ; Direction ; Grid [(Xmin, Ymin), (Xmax, Ymax)] ; Peak Demand ; Net Names                                                                                                                                                                                                                                              ;
++-----------------+-----------+-----------------------------------+-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; short           ; right     ; [(0, 400), (11, 407)]             ; 21.528 %    ;    High Routing Fan-Out                                                                                                                                                                                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u12_2_hdpldadapt_hip_avmm_readdatavalid                                                                                                                                                                    ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u12_2_hdpldadapt_pld_aib_fabric_tx_dcd_cal_done                                                                                                                                                            ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u12_2_hdpldadapt_pld_aib_hssi_tx_dll_lock                                                                                                                                                                  ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u12_2_hdpldadapt_pld_fabric_tx_transfer_en                                                                                                                                                                 ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u12_2_hdpldadapt_pld_fpll_shared_direct_async_out                                                                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u12_2_hdpldadapt_pld_pma_fpll_clk0bad                                                                                                                                                                      ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u12_2_hdpldadapt_pld_avmm2_reserved_out[0]                                                                                                                                                                 ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u12_2_hdpldadapt_hip_aib_ssr_out[1]                                                                                                                                                                        ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u12_2_hdpldadapt_pld_avmm2_cmdfifo_wr_pfull                                                                                                                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u12_2_hdpldadapt_hip_avmm_writedone                                                                                                                                                                        ;
+; short           ; right     ; [(0, 400), (11, 407)]             ; 21.528 %    ;    Long Distance                                                                                                                                                                                                                                       ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u18_2_hdpldadapt_pld_test_data[10]                                                                                                                                                                         ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u12_2_hdpldadapt_pld_rx_fabric_data_out[24]                                                                                                                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u12_2_hdpldadapt_pld_rx_fabric_data_out[21]                                                                                                                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u12_2_hdpldadapt_pld_rx_fabric_data_out[25]                                                                                                                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u12_2_hdpldadapt_pld_rx_fabric_data_out[27]                                                                                                                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u12_2_hdpldadapt_pld_rx_fabric_data_out[65]                                                                                                                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u12_2_hdpldadapt_pld_rx_fabric_data_out[67]                                                                                                                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u12_2_hdpldadapt_pld_rx_fabric_data_out[69]                                                                                                                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u12_2_hdpldadapt_pld_rx_fabric_data_out[17]                                                                                                                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u12_2_hdpldadapt_pld_rx_fabric_data_out[16]                                                                                                                                                                ;
+; short           ; left      ; [(12, 384), (23, 391)]            ; 18.625 %    ;    High Routing Fan-Out                                                                                                                                                                                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[4].src_ft_avmm_32to8_bridge_inst|cur_byte[0]                                                                    ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[4].src_ft_avmm_32to8_bridge_inst|cur_byte[1]                                                                    ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[4].src_ctf_avmm2_soft_logic_inst|avmm_sip_insts[0].agx_xcvr_avmm_soft_logic_inst|soft_avmm_write~3              ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|m32_address[4][0]                                                                                                                       ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|m32_address[4][11]                                                                                                                      ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|m32_address[4][3]                                                                                                                       ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|m32_address[4][16]                                                                                                                      ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|m32_address[4][17]                                                                                                                      ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|m32_address[4][13]                                                                                                                      ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|m32_address[4][14]                                                                                                                      ;
+; short           ; left      ; [(12, 384), (23, 391)]            ; 18.625 %    ;    Long Distance                                                                                                                                                                                                                                       ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__avmm2_7|ai_arb_01.av2_ai_inst|u_avmm2_integ_split|int_avmm_reg_addr[3]~4                                                                                                                                        ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__avmm2_7|ai_arb_01.av2_ai_inst|u_avmm2_integ_split|int_avmm2_request                                                                                                                                             ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__avmm2_7|ai_arb_01.av2_ai_inst|u_avmm2_integ_split|int_avmm_reg_addr[18]~34                                                                                                                                      ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__avmm2_7|ai_arb_01.av2_ai_inst|u_avmm2_integ_split|int_avmm_reg_addr[11]~20                                                                                                                                      ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__avmm2_7|ai_arb_01.av2_ai_inst|u_avmm2_integ_split|int_avmm_read                                                                                                                                                 ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__avmm2_7|ai_arb_01.av2_ai_inst|u_avmm2_integ_split|int_avmm_reg_addr[2]~2                                                                                                                                        ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__avmm2_7|ai_arb_01.av2_ai_inst|u_avmm2_integ_split|int_avmm_reg_addr[0]                                                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__avmm2_7|ai_arb_01.av2_ai_inst|u_avmm2_integ_split|int_avmm_reg_addr[4]~6                                                                                                                                        ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__avmm2_7|ai_arb_01.av2_ai_inst|u_avmm2_integ_split|int_avmm_reg_addr[20]                                                                                                                                         ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__avmm2_7|ai_arb_01.av2_ai_inst|u_avmm2_integ_split|int_avmm_reg_addr[5]~8                                                                                                                                        ;
+; short           ; up        ; [(0, 456), (11, 463)]             ; 45.000 %    ;    High Routing Fan-Out                                                                                                                                                                                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|pld_adapter_tx_pld_rst_n_r[21]                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|pld_adapter_tx_pld_rst_n_r[22]                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|pld_adapter_rx_pld_rst_n_r[21]                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|pld_adapter_rx_pld_rst_n_r[22]                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|bk_tx_pma_rst_n_r[3]                                                                                                                    ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|pld_ready_r[21]                                                                                                                         ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|sfreeze_0_r[21]                                                                                                                         ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|sfreeze_1_r[21]                                                                                                                         ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|sfreeze_2_r[21]                                                                                                                         ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|sfreeze_3_r[21]                                                                                                                         ;
+; short           ; up        ; [(0, 456), (11, 463)]             ; 45.000 %    ;    Long Distance                                                                                                                                                                                                                                       ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|bk_tx_pma_rst_n_r[3]                                                                                                                    ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|bk_rx_pma_rst_n_r[3]                                                                                                                    ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|ehip_signal_ok[19]                                                                                                                      ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|pld_adapter_tx_pld_rst_n_r[22]                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|pld_adapter_rx_pld_rst_n_r[22]                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|pld_ready_r[22]                                                                                                                         ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|sfreeze_0_r[22]                                                                                                                         ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|sfreeze_1_r[22]                                                                                                                         ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|sfreeze_2_r[22]                                                                                                                         ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|sfreeze_3_r[22]                                                                                                                         ;
+; short           ; down      ; [(0, 184), (11, 191)]             ; 30.000 %    ;    High Routing Fan-Out                                                                                                                                                                                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|pld_adapter_tx_pld_rst_n_r[1]                                                                                                           ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|pld_adapter_rx_pld_rst_n_r[1]                                                                                                           ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|pld_adapter_rx_pld_rst_n_r[2]                                                                                                           ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|pld_ready_r[1]                                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|sfreeze_0_r[1]                                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|sfreeze_1_r[1]                                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|sfreeze_2_r[1]                                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|sfreeze_3_r[1]                                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|tx_reset_sfreeze_fec_r[1]                                                                                                               ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|rx_reset_sfreeze_fec_r[1]                                                                                                               ;
+; short           ; down      ; [(0, 184), (11, 191)]             ; 30.000 %    ;    Long Distance                                                                                                                                                                                                                                       ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|pld_adapter_tx_pld_rst_n_r[1]                                                                                                           ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|pld_adapter_rx_pld_rst_n_r[1]                                                                                                           ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|pld_adapter_rx_pld_rst_n_r[2]                                                                                                           ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|pld_ready_r[1]                                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|sfreeze_0_r[1]                                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|sfreeze_1_r[1]                                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|sfreeze_2_r[1]                                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|sfreeze_3_r[1]                                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|tx_reset_sfreeze_fec_r[1]                                                                                                               ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|rx_reset_sfreeze_fec_r[1]                                                                                                               ;
+; long high speed ; right     ; [(0, 296), (11, 303)]             ; 100.000 %   ;    High Routing Fan-Out                                                                                                                                                                                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u21_2_hdpldadapt_hip_avmm_readdatavalid                                                                                                                                                                    ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u21_2_hdpldadapt_hip_avmm_writedone                                                                                                                                                                        ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u21_2_hdpldadapt_hip_avmm_readdata[0]                                                                                                                                                                      ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u21_2_hdpldadapt_hip_avmm_readdata[1]                                                                                                                                                                      ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u21_2_hdpldadapt_hip_avmm_readdata[2]                                                                                                                                                                      ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u21_2_hdpldadapt_hip_avmm_readdata[3]                                                                                                                                                                      ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u21_2_hdpldadapt_hip_avmm_readdata[4]                                                                                                                                                                      ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u21_2_hdpldadapt_hip_avmm_readdata[5]                                                                                                                                                                      ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u21_2_hdpldadapt_hip_avmm_readdata[6]                                                                                                                                                                      ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u21_2_hdpldadapt_hip_avmm_readdata[7]                                                                                                                                                                      ;
+; long high speed ; right     ; [(0, 296), (11, 303)]             ; 100.000 %   ;    Long Distance                                                                                                                                                                                                                                       ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u21_2_hdpldadapt_pld_8g_rxelecidle                                                                                                                                                                         ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u21_2_hdpldadapt_hip_aib_ssr_out[1]                                                                                                                                                                        ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u21_2_hdpldadapt_pld_pma_rxpll_lock                                                                                                                                                                        ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u22_2_hdpldadapt_pld_8g_full_rmf                                                                                                                                                                           ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u21_2_hdpldadapt_hip_avmm_readdatavalid                                                                                                                                                                    ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u21_2_hdpldadapt_hip_avmm_writedone                                                                                                                                                                        ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u21_2_hdpldadapt_hip_avmm_readdata[0]                                                                                                                                                                      ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u21_2_hdpldadapt_hip_avmm_readdata[1]                                                                                                                                                                      ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u21_2_hdpldadapt_hip_avmm_readdata[2]                                                                                                                                                                      ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y166_n0|x0_x0_u21_2_hdpldadapt_hip_avmm_readdata[3]                                                                                                                                                                      ;
+; long high speed ; left      ; [(384, 120), (395, 127)]          ; 94.444 %    ;    High Routing Fan-Out                                                                                                                                                                                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[1].src_ft_avmm_32to8_bridge_inst|cur_st.ST_READ                                                                 ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[1].src_ft_avmm_32to8_bridge_inst|cur_byte[0]                                                                    ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[1].src_ft_avmm_32to8_bridge_inst|cur_byte[1]                                                                    ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[1].src_ft_avmm_32to8_bridge_inst|cur_st.ST_WRITE                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[1].src_ft_avmm_32to8_bridge_inst|cur_st.ST_WRITE_DONE                                                           ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[1].src_ctf_avmm2_soft_logic_inst|avmm_sip_insts[0].agx_xcvr_avmm_soft_logic_inst|reduce_or_1~0                  ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[1].src_ctf_avmm2_soft_logic_inst|avmm_sip_insts[0].agx_xcvr_avmm_soft_logic_inst|avmm_waitrequest_cmdfifo_pfull ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[1].src_ctf_avmm2_soft_logic_inst|avmm_sip_insts[0].agx_xcvr_avmm_soft_logic_inst|avmm_readdata[2]               ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[1].src_ctf_avmm2_soft_logic_inst|avmm_sip_insts[0].agx_xcvr_avmm_soft_logic_inst|avmm_readdata[0]               ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[1].src_ctf_avmm2_soft_logic_inst|avmm_sip_insts[0].agx_xcvr_avmm_soft_logic_inst|avmm_readdata[1]               ;
+; long high speed ; left      ; [(384, 120), (395, 127)]          ; 94.444 %    ;    Long Distance                                                                                                                                                                                                                                       ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0|x0_x0_u8_2_hdpldadapt_pld_fpll_shared_direct_async_out                                                                                                                                                           ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0|x0_x0_u8_2_hdpldadapt_pld_8g_rxelecidle                                                                                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0|x0_x0_u8_2_hdpldadapt_pld_pll_cal_done                                                                                                                                                                           ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0|x0_x0_u8_2_hdpldadapt_pld_pma_rxpll_lock                                                                                                                                                                         ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl_sync|ux_rxcdrlock2data_inst[2]|din_s1                                                                                                   ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl_sync|flux0_cpi_cmn_busy_inst|dreg[0]                                                                                                    ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0|x0_x0_u6_2_hdpldadapt_pld_test_data[3]                                                                                                                                                                           ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl_sync|rx_pcs_fully_aligned_inst[3]|din_s1                                                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl_sync|rx_pcs_fully_aligned_inst[0]|din_s1                                                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl_sync|pcs_rx_sf_inst[3]|din_s1                                                                                                           ;
+; long high speed ; up        ; [(12, 384), (23, 391)]            ; 96.429 %    ;    High Routing Fan-Out                                                                                                                                                                                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|m32_write[4]                                                                                                                            ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|is_rx_pstate_power_down[4]                                                                                                              ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|is_tx_pstate_power_down[4]                                                                                                              ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[4].src_ft_avmm_32to8_bridge_inst|o_avmm_s32_readdata[0]~0                                                       ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[4].src_ctf_avmm2_soft_logic_inst|avmm_sip_insts[0].agx_xcvr_avmm_soft_logic_inst|reduce_or_1~0                  ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[4].m20k_fsm_iflux_ingress_inst|dreg[0]                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[4].m20_fsm_flux_pause_wait_done_inst|dreg[0]                                                                    ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[4].src_ctf_avmm2_soft_logic_inst|avmm_sip_insts[0].agx_xcvr_avmm_soft_logic_inst|soft_avmm_write~0              ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[4].src_ctf_avmm2_soft_logic_inst|avmm_sip_insts[0].agx_xcvr_avmm_soft_logic_inst|soft_avmm_write~1              ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|gen_block_m20k_avmm_fsm[4].src_ctf_avmm2_soft_logic_inst|avmm_sip_insts[0].agx_xcvr_avmm_soft_logic_inst|soft_avmm_write~2              ;
+; long high speed ; up        ; [(12, 384), (23, 391)]            ; 96.429 %    ;    Long Distance                                                                                                                                                                                                                                       ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl_sync|ux_octl_pcs_txstatus_inst[0]|dreg[0]                                                                                               ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl_sync|oflux_rx_srds_rdy_inst[0]|dreg[0]                                                                                                  ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u5_2_hdpldadapt_pld_pma_pcie_sw_done[1]                                                                                                                                                                    ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u8_2_hdpldadapt_pld_pma_rxpll_lock                                                                                                                                                                         ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u6_2_hdpldadapt_pld_fpll_shared_direct_async_out                                                                                                                                                           ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl_sync|ux_octl_pcs_txstatus_inst[1]|dreg[0]                                                                                               ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl_sync|ux_octl_pcs_rxstatus_inst[3]|dreg[0]                                                                                               ;
+;     --          ;           ;                                   ;             ; q_sys_u0|ftile_xcvr_test_5|directphy_f_0|directphy_f_0|tx_deskew_generate_block[0].tx_dsk_gen_inst|o_data[58]                                                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x1_y330_n0|x0_x0_u8_2_hdpldadapt_pld_pll_cal_done                                                                                                                                                                           ;
+;     --          ;           ;                                   ;             ; q_sys_u0|ftile_xcvr_test_5|directphy_f_0|directphy_f_0|tx_deskew_generate_block[0].tx_dsk_gen_inst|o_data[49]                                                                                                                                          ;
+; long high speed ; down      ; [(372, 80), (383, 87)]            ; 99.405 %    ;    High Routing Fan-Out                                                                                                                                                                                                                                ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|tile_addr[1]                                                                                                                            ;
+;     --          ;           ;                                   ;             ; q_sys_u0|ftile_xcvr_test_11|xcvr_test_system_0|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|Decoder_0~1                                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|tile_addr[0]                                                                                                                            ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|tile_addr[2]                                                                                                                            ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|aib_addr[0]                                                                                                                             ;
+;     --          ;           ;                                   ;             ; q_sys_u0|ftile_xcvr_test_11|xcvr_test_system_0|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|Decoder_0~7                                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|sclr_sync_inst|dreg[0]                                                                                                                                         ;
+;     --          ;           ;                                   ;             ; q_sys_u0|ftile_xcvr_test_11|xcvr_test_system_0|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|pattern_select[2]                                                                                                                    ;
+;     --          ;           ;                                   ;             ; q_sys_u0|ftile_xcvr_test_11|xcvr_test_system_0|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|Decoder_0~2                                                                                                                          ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|tile_addr[4]                                                                                                                            ;
+; long high speed ; down      ; [(372, 80), (383, 87)]            ; 99.405 %    ;    Long Distance                                                                                                                                                                                                                                       ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|e4fec0_tx_rst_n_r                                                                                                                       ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|brk_rx_sfreeze_dprst_r[0]                                                                                                               ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|brk_rx_sfreeze_dprst_r[1]                                                                                                               ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|brk_rx_sfreeze_dprst_r[2]                                                                                                               ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|sclr_sync_inst|dreg[0]                                                                                                                                         ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|e4fec2_tx_rst_n_r                                                                                                                       ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|e4_hip_rx_rst_n_r[15]                                                                                                                   ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|pld_ready_r[0]~0                                                                                                                        ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|bk_tx_pma_rst_n_r[3]                                                                                                                    ;
+;     --          ;           ;                                   ;             ; bts_xcvr_auto_tiles|z1577b_x390_y2_n0__reset_controller|x_f_tile_soft_reset_ctlr_sip_v1|x_ftile_reset|rst_ctrl|e4fec3_tx_rst_n_r                                                                                                                       ;
++-----------------+-----------+-----------------------------------+-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Peak Total Grid Crossings                                                                                                             ;
++----------------------------------------------------------------------------------------------------------------+----------------------+
+; Net Name                                                                                                       ; Total Grid Crossings ;
++----------------------------------------------------------------------------------------------------------------+----------------------+
+; global_resetn                                                                                                  ; 125                  ;
+; ~GND                                                                                                           ; 73                   ;
+; cpu_1v2_resetn~input                                                                                           ; 73                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|writedata[13]                                                         ; 53                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|address[3]                                                            ; 53                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|writedata[31]                                                         ; 52                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|writedata[20]                                                         ; 52                   ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|memfabric|mm_interconnect_0|limiter_pipeline|gen_inst[0].core|data1[41] ; 52                   ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|memfabric|mm_interconnect_0|limiter_pipeline|gen_inst[0].core|data1[39] ; 52                   ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|memfabric|mm_interconnect_0|limiter_pipeline|gen_inst[0].core|data1[43] ; 52                   ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|memfabric|mm_interconnect_0|limiter_pipeline|gen_inst[0].core|data1[50] ; 52                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|address[11]                                                           ; 52                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|address[10]                                                           ; 52                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|writedata[12]                                                         ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|writedata[6]                                                          ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|writedata[15]                                                         ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|writedata[8]                                                          ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|writedata[24]                                                         ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|writedata[17]                                                         ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|writedata[18]                                                         ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|writedata[19]                                                         ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|writedata[16]                                                         ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|writedata[14]                                                         ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|writedata[11]                                                         ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|writedata[27]                                                         ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|writedata[3]                                                          ; 51                   ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|memfabric|mm_interconnect_0|limiter_pipeline|gen_inst[0].core|data1[42] ; 51                   ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|memfabric|mm_interconnect_0|limiter_pipeline|gen_inst[0].core|data1[40] ; 51                   ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|memfabric|mm_interconnect_0|limiter_pipeline|gen_inst[0].core|data1[47] ; 51                   ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|memfabric|mm_interconnect_0|limiter_pipeline|gen_inst[0].core|data1[53] ; 51                   ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|memfabric|mm_interconnect_0|limiter_pipeline|gen_inst[0].core|data1[45] ; 51                   ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|memfabric|mm_interconnect_0|limiter_pipeline|gen_inst[0].core|data1[52] ; 51                   ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|memfabric|mm_interconnect_0|limiter_pipeline|gen_inst[0].core|data1[49] ; 51                   ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|memfabric|mm_interconnect_0|limiter_pipeline|gen_inst[0].core|data1[48] ; 51                   ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|memfabric|mm_interconnect_0|limiter_pipeline|gen_inst[0].core|data1[46] ; 51                   ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|memfabric|mm_interconnect_0|limiter_pipeline|gen_inst[0].core|data1[44] ; 51                   ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|memfabric|mm_interconnect_0|limiter_pipeline|gen_inst[0].core|data1[54] ; 51                   ;
+; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|memfabric|mm_interconnect_0|limiter_pipeline|gen_inst[0].core|data1[38] ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|address[12]                                                           ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|address[9]                                                            ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|address[8]                                                            ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|address[6]                                                            ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|address[5]                                                            ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|address[4]                                                            ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|address[7]                                                            ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|address[14]                                                           ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|write                                                                 ; 51                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|writedata[2]                                                          ; 50                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|writedata[30]                                                         ; 50                   ;
+; q_sys_u0|master_0|master_0|transacto|p2m|writedata[10]                                                         ; 50                   ;
++----------------------------------------------------------------------------------------------------------------+----------------------+
+
+

@@ -1,0 +1,93 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 576 216)
+	(text "q_sys_systemclk_f_1" (rect 216 0 308 12)(font "Arial" (font_size 11)))
+	(text "inst" (rect 8 200 20 212)(font "Arial" ))
+	(port
+		(pt 0 76)
+		(input)
+		(text "in_refclk_fgt_4" (rect 0 0 62 12)(font "Arial" (font_size 8)))
+		(text "in_refclk_fgt_4" (rect 4 65 94 76)(font "Arial" (font_size 8)))
+		(line (pt 0 76)(pt 170 76)(line_width 1))
+	)
+	(port
+		(pt 0 126)
+		(input)
+		(text "disable_refclk_monitor_4" (rect 0 0 101 12)(font "Arial" (font_size 8)))
+		(text "disable_refclk_monitor_4" (rect 4 115 148 126)(font "Arial" (font_size 8)))
+		(line (pt 0 126)(pt 170 126)(line_width 1))
+	)
+	(port
+		(pt 576 76)
+		(output)
+		(text "out_systempll_synthlock_0" (rect 0 0 109 12)(font "Arial" (font_size 8)))
+		(text "out_systempll_synthlock_0" (rect 443 65 593 76)(font "Arial" (font_size 8)))
+		(line (pt 576 76)(pt 408 76)(line_width 1))
+	)
+	(port
+		(pt 576 126)
+		(output)
+		(text "out_systempll_clk_0" (rect 0 0 82 12)(font "Arial" (font_size 8)))
+		(text "out_systempll_clk_0" (rect 476 115 590 126)(font "Arial" (font_size 8)))
+		(line (pt 576 126)(pt 408 126)(line_width 1))
+	)
+	(port
+		(pt 576 176)
+		(output)
+		(text "out_refclk_fgt_4" (rect 0 0 68 12)(font "Arial" (font_size 8)))
+		(text "out_refclk_fgt_4" (rect 492 165 588 176)(font "Arial" (font_size 8)))
+		(line (pt 576 176)(pt 408 176)(line_width 1))
+	)
+	(drawing
+		(text "out_systempll_synthlock_0" (rect 409 46 968 105)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "out_systempll_synthlock" (rect 298 71 734 152)(font "Arial" (color 0 0 0)))
+		(text "out_systempll_clk_0" (rect 409 96 932 205)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 393 121 804 252)(font "Arial" (color 0 0 0)))
+		(text "out_refclk_fgt_4" (rect 409 146 914 305)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 393 171 804 352)(font "Arial" (color 0 0 0)))
+		(text "refclk_fgt" (rect 114 46 288 105)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "in_refclk_fgt_4" (rect 175 71 440 152)(font "Arial" (color 0 0 0)))
+		(text "disable_refclk_monitor_4" (rect 22 96 188 205)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "disable_refclk_monitor_4" (rect 175 121 494 252)(font "Arial" (color 0 0 0)))
+		(text " q_sys_systemclk_f_1 " (rect 478 201 1082 412)(font "Arial" ))
+		(line (pt 170 34)(pt 408 34)(line_width 1))
+		(line (pt 408 34)(pt 408 201)(line_width 1))
+		(line (pt 170 201)(pt 408 201)(line_width 1))
+		(line (pt 170 34)(pt 170 201)(line_width 1))
+		(line (pt 407 55)(pt 407 80)(line_width 1))
+		(line (pt 406 55)(pt 406 80)(line_width 1))
+		(line (pt 407 105)(pt 407 130)(line_width 1))
+		(line (pt 406 105)(pt 406 130)(line_width 1))
+		(line (pt 407 155)(pt 407 180)(line_width 1))
+		(line (pt 406 155)(pt 406 180)(line_width 1))
+		(line (pt 171 55)(pt 171 80)(line_width 1))
+		(line (pt 172 55)(pt 172 80)(line_width 1))
+		(line (pt 171 105)(pt 171 130)(line_width 1))
+		(line (pt 172 105)(pt 172 130)(line_width 1))
+		(line (pt 0 0)(pt 576 0)(line_width 1))
+		(line (pt 576 0)(pt 576 218)(line_width 1))
+		(line (pt 0 218)(pt 576 218)(line_width 1))
+		(line (pt 0 0)(pt 0 218)(line_width 1))
+	)
+)
