@@ -2,3 +2,5 @@
 /tmp-clearbox/*
 /support_logic/*
 /dni/*
+/output_files/*.rpt
+/.idea/*
